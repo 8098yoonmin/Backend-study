@@ -1,0 +1,9 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(š¿ÊÍ
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(š¿ÊÍ8ş¨Ùâõ0
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©¡Õ¡
+V	java:S125"<This block of commented-out lines of code should be removed.(ôò´»ûÿÿÿÿ
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†©Ùâõ0
