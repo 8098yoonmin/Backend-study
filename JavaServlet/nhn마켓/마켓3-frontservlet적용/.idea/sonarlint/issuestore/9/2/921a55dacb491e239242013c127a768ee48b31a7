@@ -1,0 +1,14 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(û›ÿÅıÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Áó®…üÿÿÿÿ
+Q	java:S125&"<This block of commented-out lines of code should be removed.(×ç™‹
+o
+java:S1989-"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¢·ÔŒ
+t
+java:S1989."YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(«¨‚ùÿÿÿÿ
+k
+java:S1989C"PHandle the following exception that could be thrown by "getWriter": IOException.( ¬èüıÿÿÿÿ
+R
+java:S1128"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼
+n
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ê€‰½
