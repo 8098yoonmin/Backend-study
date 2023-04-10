@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- meta configuration   이름: id, type: class  -->
 
-    <bean id="EmailMessageSender" class="com.nhnacademy.edu.springframework.sender.EmailMessageSender" >
+    <bean id="EmailMessageSender" class="com.nhnacademy.edu.springframework.sender.EmailMessageSender" scope="singleton">
     </bean>
 
-    <bean id="SmsMessageSender" class="com.nhnacademy.edu.springframework.sender.SmsMessageSender">
+    <bean id="SmsMessageSender" class="com.nhnacademy.edu.springframework.sender.SmsMessageSender" scope="prototype">
     </bean>
 
 </beans>

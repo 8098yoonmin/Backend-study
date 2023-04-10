@@ -11,14 +11,18 @@ public class Main {
 
         try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")) {
 
-            MessageSender email = context.getBean("EmailMessageSender", MessageSender.class);
-            MessageSender sms = context.getBean("SmsMessageSender", MessageSender.class);
+            MessageSender email1 = context.getBean("EmailMessageSender", MessageSender.class);
+            MessageSender email2 = context.getBean("EmailMessageSender", MessageSender.class);
 
-            User user = new User("ksw08130@naver.com", "01085166226");
-            email.sendMessage(user, "hello");
-            sms.sendMessage(user, "hello");
+            MessageSender sms1 = context.getBean("SmsMessageSender", MessageSender.class);
+            MessageSender sms2 = context.getBean("SmsMessageSender", MessageSender.class);
 
 
+            System.out.println(email1.equals(email2));
+            System.out.println(sms1.equals(sms2));
+
+//        System.out.println(email1.hashCode());
+//        System.out.println(email2.hashCode());
         }
     }
 }
