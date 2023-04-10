@@ -1,0 +1,12 @@
+
+P	java:S125"<This block of commented-out lines of code should be removed.(Æ¼Ÿ
+w
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(ó˜•Ô
+o
+java:S1989-"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(¢·ÔŒ
+t
+java:S1989."YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(«¨‚ùÿÿÿÿ
+k
+java:S1989C"PHandle the following exception that could be thrown by "getWriter": IOException.( ¬èüıÿÿÿÿ
+n
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ê€‰½
