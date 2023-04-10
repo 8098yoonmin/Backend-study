@@ -17,7 +17,7 @@ public class Main {
             MessageSender sms1 = context.getBean("SmsMessageSender", MessageSender.class);
             MessageSender sms2 = context.getBean("SmsMessageSender", MessageSender.class);
 
-            
+            //context.close();
         }
     }
 }

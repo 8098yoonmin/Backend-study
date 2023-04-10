@@ -16,4 +16,7 @@ public class SmsMessageSender implements MessageSender{
     public void init() {
         System.out.println("INIT-----------------------");
     }
+    public void cleanup() {
+        System.out.println("sms sender cleanup called!!");
+    }
 }
