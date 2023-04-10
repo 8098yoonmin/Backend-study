@@ -17,12 +17,7 @@ public class Main {
             MessageSender sms1 = context.getBean("SmsMessageSender", MessageSender.class);
             MessageSender sms2 = context.getBean("SmsMessageSender", MessageSender.class);
 
-
-            System.out.println(email1.equals(email2));
-            System.out.println(sms1.equals(sms2));
-
-//        System.out.println(email1.hashCode());
-//        System.out.println(email2.hashCode());
+            
         }
     }
 }

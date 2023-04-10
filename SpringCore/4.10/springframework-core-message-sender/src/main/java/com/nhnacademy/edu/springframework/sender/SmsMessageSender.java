@@ -12,4 +12,8 @@ public class SmsMessageSender implements MessageSender{
         System.out.println("SMS Message Sent to "+ user.getPhoneNumber() + ":" + message  );
 
     }
+
+    public void init() {
+        System.out.println("INIT-----------------------");
+    }
 }

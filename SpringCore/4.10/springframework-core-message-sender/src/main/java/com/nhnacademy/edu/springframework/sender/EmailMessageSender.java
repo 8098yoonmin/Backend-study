@@ -12,4 +12,9 @@ public class EmailMessageSender implements MessageSender{
         System.out.println("Email Message Sent " + user.getEmail() + ":"  + message );
 
     }
+
+    public void init() {
+        System.out.println("INIT-----------------------");
+    }
+
 }
