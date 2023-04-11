@@ -23,17 +23,6 @@ public class MainConfig {
         return new EmailMessageSender();
     }
 
-    //MessageSender type이 중복
-    @Bean
-    public MessageSendService messageSendService(@Qualifier("emailMessageSender") MessageSender messageSender) {
-        return new MessageSendService(messageSender);
-    }
-
-//    @Bean
-//    public MessageSendService messageSendService(MessageSender emailMessageSender) {
-//        return new MessageSendService(emailMessageSender);
-//    }
-
 
 
 }
