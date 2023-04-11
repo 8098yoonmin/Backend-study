@@ -17,7 +17,7 @@ public class MessageSendService {
     }
 
     @Autowired
-    public void setSmsMessageSender(@Qualifier("smsMessageSender") MessageSender messageSender) {
+    public void setSmsMessageSender(@Sms("emailMessageSender") MessageSender messageSender) {
         System.out.println("안녕 sms 메신저!");
         this.messageSender = messageSender;
     }
