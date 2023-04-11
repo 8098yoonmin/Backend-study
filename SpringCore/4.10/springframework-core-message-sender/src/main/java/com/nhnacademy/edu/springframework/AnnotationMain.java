@@ -7,8 +7,11 @@ public class AnnotationMain {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext("com.nhnacademy.edu.springframework.config");
 
-        MessageSendService sms = context.getBean("messageSendService", MessageSendService.class);
-        sms.doSendMessage();
+//        MessageSendService sms = context.getBean("messageSendService", MessageSendService.class);
+//        sms.doSendMessage();
+
+        context.close();
+
 
     }
 }

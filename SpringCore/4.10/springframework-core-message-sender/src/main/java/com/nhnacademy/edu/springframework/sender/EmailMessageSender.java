@@ -13,5 +13,14 @@ public class EmailMessageSender implements MessageSender{
 
     }
 
+    public void init() {
+        System.out.println("------------init");
+    }
+
+    //close()
+    public void cleanup() {
+        System.out.println("-------------destroy");
+    }
+
 
 }
