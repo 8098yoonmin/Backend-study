@@ -16,11 +16,6 @@ public class MessageSendService {
         this.messageSender = messageSender;
     }
 
-    public void setEmailMessageSender(MessageSender messageSender) {
-        System.out.println("안녕 email 메신저!");
-        this.messageSender = messageSender;
-    }
-
 
     void doSendMessage() {
         User user = new User("ksw08130@naver.com", "01085166226");
