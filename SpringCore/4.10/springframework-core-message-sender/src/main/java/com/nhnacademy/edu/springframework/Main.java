@@ -17,7 +17,6 @@ public class Main {
             MessageSendService sms = context.getBean("MessageSendService", MessageSendService.class);
             sms.doSendMessage();
 
-
         }
     }
 }
