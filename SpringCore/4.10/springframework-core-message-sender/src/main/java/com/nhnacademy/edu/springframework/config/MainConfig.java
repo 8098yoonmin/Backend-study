@@ -18,16 +18,4 @@ import org.springframework.stereotype.Service;
 @ComponentScan(basePackages = "com.nhnacademy.edu.springframework")
 public class MainConfig {
 
-    @Bean
-    public MessageSender smsMessageSender() {
-        return new SmsMessageSender();
-    }
-
-    @Bean
-    public MessageSender emailMessageSender() {
-        return new EmailMessageSender();
-    }
-
-
-
 }

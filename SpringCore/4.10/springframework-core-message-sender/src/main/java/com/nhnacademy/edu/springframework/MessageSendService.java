@@ -14,7 +14,7 @@ public class MessageSendService {
     @Value("${name}")
     private String value;
     @Autowired
-    public MessageSendService(@Qualifier("emailMessageSender") MessageSender messageSender) {
+    public MessageSendService(@Qualifier("smsMessageSender") MessageSender messageSender) {
         this.messageSender = messageSender;
 
     }
