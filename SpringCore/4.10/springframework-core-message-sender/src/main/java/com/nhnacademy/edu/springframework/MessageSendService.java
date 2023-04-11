@@ -8,16 +8,16 @@ public class MessageSendService {
     //setter로 쓸 때는 final이란느 키워드를 제거해줘야 한다.
     MessageSender messageSender;
 
-    public MessageSendService() {
-
-
-    }
-
-    @Autowired
-    public void setSmsMessageSender(@Qualifier("smsMessageSender") MessageSender messageSender) {
-        System.out.println("안녕 sms 메신저!");
+    public MessageSendService(MessageSender messageSender) {
         this.messageSender = messageSender;
+
     }
+
+//    @Autowired
+//    public void setSmsMessageSender(MessageSender messageSender) {
+//        System.out.println("안녕 sms 메신저!");
+//        this.messageSender = messageSender;
+//    }
 
 
 
