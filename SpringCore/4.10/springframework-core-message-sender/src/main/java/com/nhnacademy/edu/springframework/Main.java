@@ -11,11 +11,12 @@ public class Main {
 
         try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")) {
 
-//            MessageSender email1 = context.getBean("EmailMessageSender", MessageSender.class);
-//            MessageSender email2 = context.getBean("EmailMessageSender", MessageSender.class);
 
             MessageSendService sms = context.getBean("MessageSendService", MessageSendService.class);
             sms.doSendMessage();
+//
+//            MessageSendService email = context.getBean("MessageSendService", MessageSendService.class);
+//            email.doSendMessage();
 
         }
     }

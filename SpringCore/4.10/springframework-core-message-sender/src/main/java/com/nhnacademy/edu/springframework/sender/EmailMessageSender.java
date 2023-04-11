@@ -13,11 +13,11 @@ public class EmailMessageSender implements MessageSender{
 
     }
 
-    public void init() {
-        System.out.println("INIT-----------------------");
-    }
-    public void cleanup() {
-        System.out.println("email sender cleanup called!!");
-    }
+//    public void init() {
+//        System.out.println("INIT-----------------------");
+//    }
+//    public void cleanup() {
+//        System.out.println("email sender cleanup called!!");
+//    }
 
 }
