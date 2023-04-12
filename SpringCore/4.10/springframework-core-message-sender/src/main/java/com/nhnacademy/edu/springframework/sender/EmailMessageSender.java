@@ -1,6 +1,7 @@
 package com.nhnacademy.edu.springframework.sender;
 
 import com.nhnacademy.edu.springframework.User;
+import com.nhnacademy.edu.springframework.annotation.ElapsedTimeLog;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -10,19 +11,10 @@ public class EmailMessageSender implements MessageSender{
     }
 
     @Override
+    @ElapsedTimeLog
     public void sendMessage(User user, String message) {
         System.out.println("Email Message Sent " + user.getEmail() + ":"  + message );
 
     }
-
-    public void init() {
-        System.out.println("------------init");
-    }
-
-    //close()
-    public void cleanup() {
-        System.out.println("-------------destroy");
-    }
-
 
 }

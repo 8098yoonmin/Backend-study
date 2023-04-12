@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 @Configuration
 @ComponentScan(basePackages = "com.nhnacademy.edu.springframework")
 @EnableAspectJAutoProxy
+
 public class MainConfig {
 
 }
