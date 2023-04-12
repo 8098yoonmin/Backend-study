@@ -15,8 +15,8 @@ import java.util.Arrays;
 @Component
 public class LogginAspect {
 
-    @Around("@annotation(com.nhnacademy.edu.springframework.annotation.ElapsedTimeLog) && args(user, message)" )
-    public Object loggingExecutionTime(ProceedingJoinPoint pjp, User user, String message ) {
+    @Around("@annotation(com.nhnacademy.edu.springframework.annotation.ElapsedTimeLog) && args(user,..)" )
+    public Object loggingExecutionTime(ProceedingJoinPoint pjp, User user) {
         //throwable을 클래스에 선언하면 stopwatch가 실행을 안함
         StopWatch stopWatch = new StopWatch();
 
@@ -40,8 +40,6 @@ public class LogginAspect {
             System.out.println("실행메서드: " + methodName + " "+"실행시간: " + totalTimeMillis + "ms");
         }
 
-        if(true)
-            throw new RuntimeException("test");
 
         return rt;
     }

@@ -2,7 +2,6 @@ package com.nhnacademy.edu.springframework.sender;
 
 import com.nhnacademy.edu.springframework.User;
 import com.nhnacademy.edu.springframework.annotation.ElapsedTimeLog;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component
