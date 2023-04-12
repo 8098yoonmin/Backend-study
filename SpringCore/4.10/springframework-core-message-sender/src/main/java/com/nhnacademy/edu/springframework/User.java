@@ -16,6 +16,8 @@ public class User {
     public String getPhoneNumber() {
         return this.phoneNumber;
     }
-
-
+    @Override
+    public String toString() {
+        return "{ 'email':" +email +", 'phoneNumber':" +phoneNumber +"}";
+    }
 }

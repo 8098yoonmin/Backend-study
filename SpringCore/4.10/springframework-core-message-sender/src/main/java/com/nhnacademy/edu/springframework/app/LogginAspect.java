@@ -1,5 +1,6 @@
 package com.nhnacademy.edu.springframework.app;
 
+import com.nhnacademy.edu.springframework.User;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,8 +13,8 @@ import java.util.Arrays;
 @Aspect
 @Component
 public class LogginAspect {
-    @Around("execution(public * *.sendMessage(..))")
-    public Object loggingExecutionTime(ProceedingJoinPoint pjp) {
+    @Around("execution(public * *.sendMessage(..)) && args(user,..)")
+    public Object loggingExecutionTime(ProceedingJoinPoint pjp, User user) {
         //throwable을 클래스에 선언하면 stopwatch가 실행을 안함
         StopWatch stopWatch = new StopWatch();
 
@@ -30,6 +31,7 @@ public class LogginAspect {
 
         MethodSignature signature = (MethodSignature) pjp.getSignature();
         String methodName = signature.getMethod().getName();
+        System.out.println(user.toString());
         System.out.println("실행메서드: " + methodName + " "+"실행시간: " + totalTimeMillis + "ms");
         return rt;
     }

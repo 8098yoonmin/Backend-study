@@ -1,6 +1,4 @@
 
-j
-:src/main/java/com/nhnacademy/edu/springframework/User.java,f/6/f6a377f988533e9708bb2d6d58723ffdb0d2c27c
 v
 Fsrc/main/java/com/nhnacademy/edu/springframework/annotation/Email.java,9/5/952f47e7f7051c2d30ad2ea8a53aae9754924517
 t

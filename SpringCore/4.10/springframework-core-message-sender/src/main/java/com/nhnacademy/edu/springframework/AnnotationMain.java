@@ -11,7 +11,6 @@ public class AnnotationMain {
         MessageSendService sms = context.getBean("messageSendService", MessageSendService.class);
         sms.doSendMessage();
 
-
         context.close();
 
 
