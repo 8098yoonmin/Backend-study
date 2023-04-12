@@ -1,6 +1,4 @@
 
-z
-Jsrc/main/java/com/nhnacademy/edu/springframework/sender/MessageSender.java,5/b/5b3fff184d0bc2fafe929c1c607ec7ab35051e2f
 j
 :src/main/java/com/nhnacademy/edu/springframework/User.java,f/6/f6a377f988533e9708bb2d6d58723ffdb0d2c27c
 v
@@ -9,21 +7,3 @@ t
 Dsrc/main/java/com/nhnacademy/edu/springframework/annotation/Sms.java,e/b/eb3f0bff155611ca86dcd3ce88b0a1427061aac5
 z
 Jsrc/main/java/com/nhnacademy/edu/springframework/sender/BeanProcessor.java,7/8/78455cb37b38af448fdb2d2e7b01c29d16eec027
-r
-Bsrc/main/java/com/nhnacademy/edu/springframework/ex/Singleton.java,a/1/a15f546429874ee91c0a1d444deb603795b29e7f
-t
-Dsrc/main/java/com/nhnacademy/edu/springframework/AnnotationMain.java,6/9/6908c595a1324980faa67046158bda2fa37335ec
-€
-Psrc/main/java/com/nhnacademy/edu/springframework/config/MessageSenderConfig.java,3/f/3f6cec7f85ffc6182ec8483939ee59109b613eb3
-}
-Msrc/main/java/com/nhnacademy/edu/springframework/sender/SmsMessageSender.java,6/9/69090dbc4ed164bdb461c4da0b59e7a632244d1e
-
-Osrc/main/java/com/nhnacademy/edu/springframework/sender/EmailMessageSender.java,f/b/fb661de379018c78f808da3760b04c7eacb9d776
-W
-'springframework-core-message-sender.iml,6/8/68fbe1cbe2db67a91662dfa391ef5bcd1b1dc110
-x
-Hsrc/main/java/com/nhnacademy/edu/springframework/MessageSendService.java,6/d/6d9e557cdf0bffce418bb3ce4d3d4c60074f632a
-w
-Gsrc/main/java/com/nhnacademy/edu/springframework/config/MainConfig.java,b/7/b73ab084fa457bcbf6446ccf3312a302a34c0241
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
