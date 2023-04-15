@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- meta configuration   이름: id, type: class  -->
+
+
+    <bean id="doorayMessageSender" class="com.nhnacademy.edu.springframework.Dooray.DoorayMessageSender">
+    </bean>
+    <bean id="doorayHookSender" class="com.nhnacademy.edu.springframework.Dooray.DoorayHookSender"></bean>
+    <bean id="messageSendService" class="com.nhnacademy.edu.springframework.MessageSendService">
+        <constructor-arg ref="doorayMessageSender"></constructor-arg>
+    </bean>
+    <bean id="DoorayLogging" class="com.nhnacademy.edu.springframework.app.DoorayLogging" ></bean>
+
+    <aop:config>
+        <aop:aspect id="logging" ref="DoorayLogging">
+            <aop:pointcut id="timer"
+                  expression = "execution(public * com.nhnacademy.edu.springframework.Dooray.DoorayMessageSender.sendMessage(..))"/>
+            <aop:around pointcut-ref="timer" method="loggingExecutionTime" />
+        </aop:aspect>
+    </aop:config>
+
+
+
+</beans>
