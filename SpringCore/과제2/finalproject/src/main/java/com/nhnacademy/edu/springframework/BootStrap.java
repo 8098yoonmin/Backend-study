@@ -13,7 +13,6 @@ public class BootStrap {
         ResultReport result = new BasicResultReport();
 
         WatersupplyFeeService service = new BasicWatersupplyFeeService();
-//        result.report();
-        System.out.println(service.getTotalBill(table, 2000));
+        result.report(service.getTotalBill(table, 2000));
     }
 }
