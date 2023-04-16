@@ -1,12 +1,10 @@
 package com.nhnacademy.edu.springframework.project;
 
-import com.nhnacademy.edu.springframework.project.repository.Score;
-import com.nhnacademy.edu.springframework.project.repository.Students;
+import com.nhnacademy.edu.springframework.project.repository.Student;
 import com.nhnacademy.edu.springframework.project.service.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Collection;
-import java.util.List;
 
 public class Main {
 

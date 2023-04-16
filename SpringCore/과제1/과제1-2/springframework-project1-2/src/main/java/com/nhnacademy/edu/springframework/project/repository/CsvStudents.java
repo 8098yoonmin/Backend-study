@@ -1,7 +1,5 @@
 package com.nhnacademy.edu.springframework.project.repository;
 
-import com.nhnacademy.edu.springframework.project.service.Student;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.springframework.project.service;
+package com.nhnacademy.edu.springframework.project.repository;
 
 import com.nhnacademy.edu.springframework.project.repository.Score;
 
