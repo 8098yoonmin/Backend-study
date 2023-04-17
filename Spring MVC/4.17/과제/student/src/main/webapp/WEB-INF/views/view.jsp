@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+<jsp:include page="/WEB-INF/views/loginInfo.jsp" />
     <table>
         <tbody>
 

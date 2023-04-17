@@ -9,6 +9,7 @@
     </head>
 
     <body>
+    <jsp:include page="/WEB-INF/views/loginInfo.jsp" />
         <c:choose>
             <c:when test="${empty student}">
                 <c:set var="action" value="/student/register.do" />

@@ -4,6 +4,8 @@ import com.nhnacademy.student.domain.Gender;
 import com.nhnacademy.student.domain.Student;
 import com.nhnacademy.student.repository.JsonStudentRepository;
 import com.nhnacademy.student.repository.StudentRepository;
+import com.nhnacademy.student.repository.UserRepository;
+import com.nhnacademy.student.repository.UserRepositoryImpl;
 import org.apache.commons.math3.random.RandomDataGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -26,5 +28,13 @@ public class RootConfig {
             studentRepository.save(student);
         }
         return studentRepository;
+    }
+
+    @Bean
+    public UserRepository userRepository() {
+        UserRepository userRepository = new UserRepositoryImpl();
+        userRepository.addUser("admin","1234");
+
+        return userRepository;
     }
 }

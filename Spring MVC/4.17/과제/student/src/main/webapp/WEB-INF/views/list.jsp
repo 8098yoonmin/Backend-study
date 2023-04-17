@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<jsp:include page="/WEB-INF/views/loginInfo.jsp" />
     <h1>학생 리스트</h1>
     <p><a href="/student/register.do" >학생(등록)</a></p>
     <table>
