@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45c3a6ac-a1ee-4b72-82b1-4ccfa05e09ff" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/0/3/03e94f697e8a34c7e6fd12d91da33fd634bf6a25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/0/6/062a654d167eb4ae986d55a598681a21c9c3b409" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/1/9/1998a8392f4ad25e742f9f92319eb4997e3c1e2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/6/8/68fbe1cbe2db67a91662dfa391ef5bcd1b1dc110" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/6/d/6d9e557cdf0bffce418bb3ce4d3d4c60074f632a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/9/5/952f47e7f7051c2d30ad2ea8a53aae9754924517" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/9/6/960a42e809b4f0fefa58015606cb61df92325796" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/a/1/a15f546429874ee91c0a1d444deb603795b29e7f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/d/6/d63ea0b8f64e4d0dd1d2060fcacfd074eb7190c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/d/e/dea56977e9f490c8d7d2c601b021d0e666867447" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/e/b/eb3f0bff155611ca86dcd3ce88b0a1427061aac5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/f/6/f6a377f988533e9708bb2d6d58723ffdb0d2c27c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/springframework-core-message-sender.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Dooray/DoorayHookSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/MessageSendService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/app/DoorayLogging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/sender/DooraySender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/resources/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/main/resources/name.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/src/test/java/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Dooray/DoorayHookSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/MessageSendService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/app/DoorayLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/sender/DooraySender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/classes/name.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-1/springframework-core-message-sender/target/test-classes/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSenderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/0/3/03e94f697e8a34c7e6fd12d91da33fd634bf6a25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/0/6/062a654d167eb4ae986d55a598681a21c9c3b409" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/6/d/6d9e557cdf0bffce418bb3ce4d3d4c60074f632a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/9/6/960a42e809b4f0fefa58015606cb61df92325796" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/b/7/b73ab084fa457bcbf6446ccf3312a302a34c0241" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/d/6/d63ea0b8f64e4d0dd1d2060fcacfd074eb7190c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/d/e/dea56977e9f490c8d7d2c601b021d0e666867447" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/e/f/efcdf3e3178ab6489a28fa2da04fbf7954472971" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/f/6/f6a377f988533e9708bb2d6d58723ffdb0d2c27c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/springframework-core-message-sender.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Dooray/DoorayHookSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/MessageSendService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/annotation/DoorayTimer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/app/DoorayLogging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/config/MainConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/sender/DooraySender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/main/resources/name.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/src/test/java/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Dooray/DoorayHookSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/MessageSendService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/annotation/DoorayTimer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/app/DoorayLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/config/MainConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/sender/DooraySender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/classes/name.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-2/springframework-core-message-sender/target/test-classes/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSenderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/0/3/03e94f697e8a34c7e6fd12d91da33fd634bf6a25" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/0/6/062a654d167eb4ae986d55a598681a21c9c3b409" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/1/9/1998a8392f4ad25e742f9f92319eb4997e3c1e2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/3/9/391dcc488988192fbd8ef1f6b10cb4923f354042" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/5/9/597cc64a84d44421a2602f0a95318b99501b0038" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/6/d/6d9e557cdf0bffce418bb3ce4d3d4c60074f632a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/9/6/960a42e809b4f0fefa58015606cb61df92325796" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/b/7/b73ab084fa457bcbf6446ccf3312a302a34c0241" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/d/6/d63ea0b8f64e4d0dd1d2060fcacfd074eb7190c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/d/e/dea56977e9f490c8d7d2c601b021d0e666867447" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/e/f/efcdf3e3178ab6489a28fa2da04fbf7954472971" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/f/6/f6a377f988533e9708bb2d6d58723ffdb0d2c27c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/springframework-core-message-sender.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Dooray/DoorayHookSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/MessageSendService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/annotation/DoorayTimer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/app/DoorayLogging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/config/MainConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/java/com/nhnacademy/edu/springframework/sender/DooraySender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/resources/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/main/resources/name.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/src/test/java/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSenderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Dooray/DoorayHookSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/MessageSendService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/annotation/DoorayTimer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/app/DoorayLogging.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/config/MainConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/com/nhnacademy/edu/springframework/sender/DooraySender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/classes/name.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제0/과제0-3/springframework-core-message-sender/target/test-classes/com/nhnacademy/edu/springframework/Dooray/DoorayMessageSenderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/repository/CsvScores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/repository/CsvStudents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/repository/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/repository/Scores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/repository/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/repository/Students.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/service/CsvDataLoadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/service/DataLoadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/service/DefaultGradeQueryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/service/DefaultStudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/service/GradeQueryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/java/com/nhnacademy/edu/springframework/project/service/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/resources/data/score.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/main/resources/data/student.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/java/com/nhnacademy/edu/springframework/project/repository/ScoresTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/java/com/nhnacademy/edu/springframework/project/repository/StudentsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/java/com/nhnacademy/edu/springframework/project/service/DataLoadServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/java/com/nhnacademy/edu/springframework/project/service/GradeQueryServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/java/com/nhnacademy/edu/springframework/project/service/StudentServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/resources/data/score.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../과제1-1/springframework-project1 2/src/test/resources/data/student.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springframework-project1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/annotation/Timer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/app/Logging.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/config/StudentConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/CsvScores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/CsvStudents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/Scores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/repository/Students.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/service/CsvDataLoadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/service/DataLoadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/service/DefaultGradeQueryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/service/DefaultStudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/service/GradeQueryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/score.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/student.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/repository/ScoresTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/repository/StudentsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/service/DataLoadServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/service/GradeQueryServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/service/StudentServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data/score.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/data/student.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../과제2/finalproject2/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../과제2/finalproject2/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2OONyn1kCVHDsgMhzcUzEW4fuza" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yoonmin/Desktop/java_backend/backend-study/SpringCore/과제1/과제1-4/springframework-project1-4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d0bad446ac27b690e057045a90cfa814&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nhnacademy.edu.springframework.project.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StudentServiceTest.getStudentsOrderByScore">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.edu.springframework.project.Main" />
+      <module name="springframework-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.edu.springframework.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GradeQueryServiceTest.getScoreByStudentName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springframework-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.edu.springframework.project.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.edu.springframework.project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.edu.springframework.project.service.GradeQueryServiceTest" />
+      <option name="METHOD_NAME" value="getScoreByStudentName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GradeQueryServiceTest.getScoreByStudentSeq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springframework-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.edu.springframework.project.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.edu.springframework.project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.edu.springframework.project.service.GradeQueryServiceTest" />
+      <option name="METHOD_NAME" value="getScoreByStudentSeq" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.getPassedStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springframework-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.edu.springframework.project.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.edu.springframework.project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.edu.springframework.project.service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="getPassedStudents" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentServiceTest.getStudentsOrderByScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springframework-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.edu.springframework.project.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.edu.springframework.project.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.edu.springframework.project.service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="getStudentsOrderByScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="springframework-project1-2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="springframework-project1-2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StudentServiceTest.getStudentsOrderByScore" />
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="JUnit.StudentServiceTest.getPassedStudents" />
+        <item itemvalue="JUnit.GradeQueryServiceTest.getScoreByStudentName" />
+        <item itemvalue="JUnit.GradeQueryServiceTest.getScoreByStudentSeq" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="45c3a6ac-a1ee-4b72-82b1-4ccfa05e09ff" name="변경" comment="" />
+      <created>1681427925164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681427925164</updated>
+      <workItem from="1681427926620" duration="27263000" />
+      <workItem from="1681515493142" duration="6089000" />
+      <workItem from="1681523927830" duration="470000" />
+      <workItem from="1681525070849" duration="3950000" />
+      <workItem from="1681535357844" duration="4951000" />
+      <workItem from="1681542207298" duration="10133000" />
+      <workItem from="1681567941183" duration="9999000" />
+      <workItem from="1681656454564" duration="457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/repository/ScoresTest.java</url>
+          <line>47</line>
+          <properties field="expect" class="com.nhnacademy.edu.springframework.project.repository.ScoresTest" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/service/StudentServiceTest.java</url>
+          <line>20</line>
+          <properties field="studentList" class="com.nhnacademy.edu.springframework.project.service.StudentServiceTest" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhnacademy/edu/springframework/project/service/CsvDataLoadService.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/nhnacademy/edu/springframework/project/service/StudentServiceTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.nhnacademy.edu.springframework.project.repository.CsvStudents$MockitoMock$1806788752" memberName="students" />
+        <PinnedItemInfo parentTag="com.nhnacademy.edu.springframework.project.repository.CsvStudents$MockitoMock$1847756320" memberName="students" />
+        <PinnedItemInfo parentTag="com.nhnacademy.edu.springframework.project.repository.CsvStudents$MockitoMock$1847756320" memberName="studentFile" />
+        <PinnedItemInfo parentTag="com.nhnacademy.edu.springframework.project.repository.CsvStudents$MockitoMock$911777156" memberName="studentFile" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
