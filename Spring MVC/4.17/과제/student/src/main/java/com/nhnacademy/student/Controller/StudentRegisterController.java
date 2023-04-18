@@ -37,26 +37,13 @@ public class StudentRegisterController {
     @PostMapping
     public String studentRegister( @Valid StudentRequest studentRequest, BindingResult bindingResult) {
 
-//        String id = req.getParameter("id");
-//        String name = req.getParameter("name");
-//
-//        Gender gender = null;
-//        if(Objects.nonNull(req.getParameter("gender"))){
-//            gender = Gender.valueOf(req.getParameter("gender"));
-//        }
-//
-//        Integer age = null;
-//        if(Objects.nonNull(req.getParameter("age"))){
-//            age = Integer.parseInt(req.getParameter("age"));
-//        }
-//
-//        if(Objects.isNull(id) || Objects.isNull(name) || Objects.isNull(gender) || Objects.isNull(age)){
-//            throw new RuntimeException("id,name,gender,age 확인해주세요!");
-//        }
 
         if(!Objects.isNull(studentRepository.getStudentById(studentRequest.getId()))){
             throw new DuplicateException();
+        }
 
+        if(bindingResult.hasErrors()) {
+            throw new ValidationException(bindingResult);
         }
 
 
