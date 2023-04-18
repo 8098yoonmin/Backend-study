@@ -1,11 +1,9 @@
-package com.nhnacademy.student.Controller;
+package com.nhnacademy.student.controller;
 
 
-import com.nhnacademy.student.domain.Student;
 import com.nhnacademy.student.repository.StudentRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.servlet.http.HttpServletRequest;

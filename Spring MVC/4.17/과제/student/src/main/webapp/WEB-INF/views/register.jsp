@@ -35,6 +35,8 @@
                         <td>
                             <input type="radio" name="gender" value="M" ${student.gender eq 'M' ? 'checked' : '' } />남
                             <input type="radio" name="gender" value="M" ${student.gender eq 'F' ? 'checked' : '' } />여
+                            <input type="radio" name="gender" value="M" ${student.gender eq 'C' ? 'checked' : '' } />??
+
                         </td>
                     </tr>
                     <tr>

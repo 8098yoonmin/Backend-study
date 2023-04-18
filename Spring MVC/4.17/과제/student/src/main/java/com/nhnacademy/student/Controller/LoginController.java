@@ -1,4 +1,4 @@
-package com.nhnacademy.student.Controller;
+package com.nhnacademy.student.controller;
 
 import com.nhnacademy.student.domain.LoginRequest;
 import com.nhnacademy.student.domain.User;
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -29,14 +30,15 @@ public class LoginController {
 
 
 
-    @GetMapping(value={"/",""})
-    public String loginForm(Model model, User user, HttpServletResponse response){
-        if(Objects.nonNull(user)){
-            return "loginForm";
+    @GetMapping("/login")
+    public String loginForm(Model model, User user, HttpServletResponse response, HttpServletRequest request){
+        HttpSession session = request.getSession(false);
+        if(Objects.nonNull(user) && Objects.nonNull(user.getUserId())){
+            return "redirect:/";
         }
         log.info("message:{}", model.getAttribute("message"));
         model.addAttribute("loginRequest",new LoginRequest());
-        return "login/loginForm";
+        return "loginForm";
     }
 
     @PostMapping("/login")
@@ -51,17 +53,20 @@ public class LoginController {
             HttpSession session = request.getSession(true);
 
             Cookie cookie = new Cookie("SESSION", session.getId());
+            cookie.setMaxAge(-1);
+            cookie.setPath("/");
             response.addCookie(cookie);
 
             User user = userRepository.getUser(id);
             session.setAttribute("user", user);
-            modelMap.put("id", session.getId());
+//            modelMap.put("id", session.getId());
             return "redirect:/student/list";
         } else {
-            String message ="로그인 실패";
-            model.addAttribute("message",message);
 
-            return "loginForm";
+            String message ="로그인 실패";
+            fail.addFlashAttribute("message",message);
+//            model.addAttribute("message",message);
+            return "redirect:/login";
         }
     }
 

@@ -13,7 +13,9 @@
 <body>
     <div style="width : 300px; height: 50px; border: 2px solid grey; padding:10px">
         아이디: ${user.userId} 이름: ${user.userName}
-        <button type="submit">로그아웃</button>
+        <form method="post" action="/student/logout">
+            <button type="submit">로그아웃</button>
+        </form>
     </div>
 
 </body>

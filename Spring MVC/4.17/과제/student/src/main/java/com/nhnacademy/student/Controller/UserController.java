@@ -1,13 +1,9 @@
-package com.nhnacademy.student.Controller;
+package com.nhnacademy.student.controller;
 
 import com.nhnacademy.student.domain.User;
 import com.nhnacademy.student.repository.UserRepository;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import java.util.Objects;
 
 public class UserController {
 

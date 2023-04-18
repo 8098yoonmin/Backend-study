@@ -1,4 +1,4 @@
-package com.nhnacademy.student.Controller;
+package com.nhnacademy.student.controller;
 
 
 import com.nhnacademy.student.domain.Student;
