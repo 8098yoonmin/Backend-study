@@ -20,11 +20,6 @@ public class LoginCheckFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         Filter.super.init(filterConfig);
-//        excludeUrls.add("/login");
-//        excludeUrls.add("/login/");
-//        excludeUrls.add("/login/logout");
-//        excludeUrls.add("/resources/");
-//        excludeUrls.add("/favicon.ico");
         filterConfig.getInitParameter("excludeUrls");
 
         //root context
