@@ -43,16 +43,16 @@ public class RootConfig {
         return messageSource;
     }
 
-//    @Bean
-//    public ObjectMapper ObjectMapper() {
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-//        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-//        objectMapper.registerModule(new JavaTimeModule());
-//        objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-//
-//        return objectMapper;
-//    }
+    @Bean
+    public ObjectMapper ObjectMapper() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        objectMapper.registerModule(new JavaTimeModule());
+        objectMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+
+        return objectMapper;
+    }
 
 
 

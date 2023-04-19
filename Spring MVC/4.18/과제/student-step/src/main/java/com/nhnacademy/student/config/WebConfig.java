@@ -31,20 +31,20 @@ import java.util.Locale;
 @ComponentScan(basePackageClasses = {com.nhnacademy.student.controller.ControllerBase.class})
 public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, MessageSourceAware {
 
-//    public WebConfig(ObjectMapper objectMapper) {
-//        this.objectMapper = objectMapper;
-//    }
-//
-//    private final ObjectMapper objectMapper;
+    public WebConfig(ObjectMapper objectMapper) {
+        this.objectMapper = objectMapper;
+    }
+
+    private final ObjectMapper objectMapper;
     private ApplicationContext applicationContext;
     private MessageSource messageSource;
 
-//    public void extendMessageConverter(List<HttpMessageConverter<?>> converters) {
-//        converters.removeIf(o-> o instanceof MappingJackson2HttpMessageConverter);
-//        HttpMessageConverter converter = new MappingJackson2HttpMessageConverter(objectMapper);
-//
-//        converters.add(converter);
-//    }
+    public void extendMessageConverter(List<HttpMessageConverter<?>> converters) {
+        converters.removeIf(o-> o instanceof MappingJackson2HttpMessageConverter);
+        HttpMessageConverter converter = new MappingJackson2HttpMessageConverter(objectMapper);
+
+        converters.add(converter);
+    }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

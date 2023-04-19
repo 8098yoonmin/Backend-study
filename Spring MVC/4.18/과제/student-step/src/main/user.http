@@ -1,9 +1,20 @@
+### 수정
+PUT http://localhost:8080/users/marco
+Content-Type: application/json
+
+{
+  "name": "뭘봐",
+  "gender": "M",
+  "age" : 30
+}
+
+### 등록
 POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-  "id": "helloever",
-  "name": "말",
+  "id": "marco",
+  "name": "마르코",
   "gender": "M",
   "age" : 30
 }
