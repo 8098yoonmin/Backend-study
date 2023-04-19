@@ -1,5 +1,6 @@
 package com.nhnacademy.student.config;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nhnacademy.student.domain.User;
 import com.nhnacademy.student.thymeleaf.CustomTagDialet;
 import org.springframework.beans.BeansException;
@@ -10,6 +11,8 @@ import org.springframework.context.MessageSourceAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
@@ -19,6 +22,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
+import java.util.List;
 import java.util.Locale;
 
 
@@ -27,8 +31,20 @@ import java.util.Locale;
 @ComponentScan(basePackageClasses = {com.nhnacademy.student.controller.ControllerBase.class})
 public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, MessageSourceAware {
 
+//    public WebConfig(ObjectMapper objectMapper) {
+//        this.objectMapper = objectMapper;
+//    }
+//
+//    private final ObjectMapper objectMapper;
     private ApplicationContext applicationContext;
     private MessageSource messageSource;
+
+//    public void extendMessageConverter(List<HttpMessageConverter<?>> converters) {
+//        converters.removeIf(o-> o instanceof MappingJackson2HttpMessageConverter);
+//        HttpMessageConverter converter = new MappingJackson2HttpMessageConverter(objectMapper);
+//
+//        converters.add(converter);
+//    }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

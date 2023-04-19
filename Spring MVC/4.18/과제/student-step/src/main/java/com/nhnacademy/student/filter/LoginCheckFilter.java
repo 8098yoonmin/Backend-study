@@ -1,6 +1,9 @@
 package com.nhnacademy.student.filter;
 
+import com.nhnacademy.student.common.CommonPropertiesConfig;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -13,15 +16,21 @@ import java.util.Set;
 
 @Slf4j
 public class LoginCheckFilter implements Filter {
-    private final Set<String> excludeUrls = new HashSet<>();
+    private Set<String> excludeUrls = new HashSet<>();
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
         Filter.super.init(filterConfig);
-        excludeUrls.add("/login");
-        excludeUrls.add("/login/");
-        excludeUrls.add("/login/logout");
-        excludeUrls.add("/resources/");
-        excludeUrls.add("/favicon.ico");
+//        excludeUrls.add("/login");
+//        excludeUrls.add("/login/");
+//        excludeUrls.add("/login/logout");
+//        excludeUrls.add("/resources/");
+//        excludeUrls.add("/favicon.ico");
+        filterConfig.getInitParameter("excludeUrls");
+
+        //root context
+        WebApplicationContext context = WebApplicationContextUtils.getRequiredWebApplicationContext(filterConfig.getServletContext());
+        CommonPropertiesConfig commonPropertiesConfig= (CommonPropertiesConfig) context.getBean("commonPropertiesConfig");
+        excludeUrls =  commonPropertiesConfig.getExcludeUrls();
     }
 
     private boolean urlCheck(String path){

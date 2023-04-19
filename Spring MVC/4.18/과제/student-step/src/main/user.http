@@ -1,0 +1,9 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": "helloever",
+  "name": "말",
+  "gender": "M",
+  "age" : 30
+}
