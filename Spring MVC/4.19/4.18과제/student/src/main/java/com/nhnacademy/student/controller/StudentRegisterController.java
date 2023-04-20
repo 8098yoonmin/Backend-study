@@ -1,19 +1,17 @@
 package com.nhnacademy.student.controller;
 
-import com.nhnacademy.student.domain.Gender;
 import com.nhnacademy.student.domain.Student;
 import com.nhnacademy.student.domain.StudentRequest;
 import com.nhnacademy.student.exception.DuplicateException;
 import com.nhnacademy.student.exception.ValidationException;
 import com.nhnacademy.student.repository.StudentRepository;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import java.util.Objects;
 
@@ -29,7 +27,8 @@ public class StudentRegisterController {
 
 
     @GetMapping
-    public String studentRegisterForm() {
+    public String studentRegisterForm(Model model) {
+        model.addAttribute(new Student());
         return "register";
     }
 

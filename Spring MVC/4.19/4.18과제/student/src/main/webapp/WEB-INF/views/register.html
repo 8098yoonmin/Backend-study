@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>학생-등록</title>
+        <link rel="stylesheet" href="/style.css" />
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+    <th:block th:insert="~{loginInfo :: userinfo}"></th:block>
+
+        <form method="post" action="@{ $ student.id==null ? '/student/register.do' : '/student/update.do' }}" th:object="${student}">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <td><input type="text" name="id" th:field="*{id}" required /></td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" name="name" th:field="*{name}" required /></td>
+                    </tr>
+                    <tr>
+                        <th>성별</th>
+                        <td>
+                            <input type="radio" th:field="*{gender}" value="M"  } />남
+                            <input type="radio" th:field="*{gender}" value="F"  } />여
+                            <input type="radio" th:field="*{gender}" value="C"} />??
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>나이</th>
+                        <td><input type="number" name="age" th:field="*{age}" required /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <button type="submit" th:text="${student.id == null ? '등록' : '수정'}">
+                </button>
+            </p>
+        </form>
+    </body>
+</html>

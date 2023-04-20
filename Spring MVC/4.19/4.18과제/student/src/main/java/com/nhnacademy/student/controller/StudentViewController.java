@@ -3,7 +3,6 @@ package com.nhnacademy.student.controller;
 
 import com.nhnacademy.student.domain.Student;
 import com.nhnacademy.student.exception.PostNotFoundException;
-import com.nhnacademy.student.exception.StudentNotFoundException;
 import com.nhnacademy.student.repository.StudentRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
