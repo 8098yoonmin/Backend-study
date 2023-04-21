@@ -2,7 +2,7 @@
 
 const apiStore = function(){
 
-    const SERVER_URL="http://133.186.144.236:8100";
+    const SERVER_URL="http://localhost:8080";
     const X_USER_ID = "marco";
     const DAILY_MAX_TODO_COUNT=8;
     const api = new Object();

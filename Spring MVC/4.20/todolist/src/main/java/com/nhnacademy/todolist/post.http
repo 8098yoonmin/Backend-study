@@ -1,0 +1,8 @@
+POST http://localhost:8080/calendar/events
+Content-Type: application/json
+X-USER-ID: yoom
+
+{
+  "subject" : "html/css/javascript study",
+  "eventAt" : "2023-04-21"
+}
