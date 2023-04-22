@@ -9,7 +9,7 @@
 <body>
 <!--<th:block th:insert="~{login/loginInfo :: userinfo}" ></th:block>-->
 <h1>사용자 리스트</h1>
-<p><a href="/student/register.do" >사용자(등록)</a></p>
+<p><a href="/user/register" >사용자(등록)</a></p>
 <table>
   <caption></caption>
   <thead>
@@ -28,7 +28,7 @@
     <td> <img th:src= "${item.userImage}"></td>
     <td th:text="${item.userPassword}"></td>
     <td>
-      <a th:href="@{/student/view.do(id=${item.userId})}">조회</a>
+      <a th:href="@{/user/view(id=${item.userId})}">조회</a>
     </td>
   </tr>
   </tbody>

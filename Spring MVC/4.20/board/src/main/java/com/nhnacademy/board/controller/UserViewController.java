@@ -1,30 +1,30 @@
 package com.nhnacademy.board.controller;
 
 import com.nhnacademy.board.domain.User;
-import com.nhnacademy.board.repository.UserRepository;
 import com.nhnacademy.board.service.UserService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.List;
+import javax.servlet.http.HttpServletRequest;
 
-@Slf4j
 @Controller
 @RequestMapping("/user")
-public class UserListController {
+public class UserViewController {
+
     private final UserService userService;
 
-    public UserListController(UserService userService) {
+    public UserViewController(UserService userService) {
         this.userService = userService;
     }
 
-    @GetMapping("/list")
-    public String list(Model model) {
-        List<User> userList = userService.getUserList();
-        model.addAttribute("userList", userList);
-        return "user/userList";
+    @GetMapping("/view")
+    public String view(Model model, @RequestParam(name = "id", required = true) String id){
+        User user = userService.getUser(id);
+        model.addAttribute("user", user);
+        return "user/view";
     }
+
 }

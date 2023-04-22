@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>사용자-조회</title>
+    <link rel="stylesheet" href="/resources/style.css" />
+</head>
+<body>
+<!--    <th:block th:insert="~{login/loginInfo :: userinfo}" ></th:block>-->
+    <table>
+        <caption></caption>
+        <tbody>
+
+            <tr>
+                <th>아이디</th>
+                <td th:text="${user.userId}" ></td>
+            </tr>
+
+            <tr>
+                <th>이름</th>
+                <td th:text="${user.userName}"></td>
+            </tr>
+
+            <tr>
+                <th>프로필 이미지</th>
+                <td><img th:src="${user.userImage}"></td>
+            </tr>
+
+            <tr>
+                <th>비밀번호</th>
+                <td th:text="${user.userPassword}"></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    <ul>
+        <li><a href="/user/list">리스트</a></li>
+        <li>
+            <a th:href="@{/user/update(id=${student.id})}">수정</a>
+        </li>
+        <li>
+            <form method="post" action="/user/delete">
+                <input type="hidden" name="id" th:value="${user.userId}" />
+                <button type="submit">삭제</button>
+            </form>
+        </li>
+
+    </ul>
+
+</body>
+</html>
