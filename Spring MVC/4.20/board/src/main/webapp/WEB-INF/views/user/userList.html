@@ -16,19 +16,19 @@
   <tr>
     <th>아이디</th>
     <th>이름</th>
-    <th>성별</th>
-    <th>나이</th>
+    <th>비밀번호</th>
+<!--    <th>나이</th>-->
     <th>cmd</th>
   </tr>
   </thead>
   <tbody>
   <tr th:each="item : ${userList}" >
-    <td th:text="${item.id}"></td>
-    <td th:text="${item.name}"></td>
+    <td th:text="${item.userId}"></td>
+    <td th:text="${item.userName}"></td>
 <!--    <td th:text="${#nhnacademy.gender(item.gender)}"></td>-->
-    <td th:text="${item.password}"></td>
+    <td th:text="${item.userPassword}"></td>
     <td>
-      <a th:href="@{/student/view.do(id=${item.id})}">조회</a>
+      <a th:href="@{/student/view.do(id=${item.userId})}">조회</a>
     </td>
   </tr>
   </tbody>

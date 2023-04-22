@@ -15,5 +15,3 @@ O
 src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 u
 Esrc/main/java/com/nhnacademy/board/common/CommonPropertiesConfig.java,0/3/034c2ef3600e194100fb1b4d533b04d828b5d54e
-q
-Asrc/main/java/com/nhnacademy/board/repository/UserRepository.java,c/a/ca691a717ca26cf1b66e6c7e7af5e7e1bc322955
