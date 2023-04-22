@@ -107,7 +107,7 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
 
     @Bean
     public User user(){
-        return new User("admin","관리자","1234");
+        return new User("admin","관리자","/Users/yoonmin/Desktop/java_backend/backend-study/Spring MVC/4.20/board/src/main/webapp/resources/프로필.jpeg","1234");
     }
 
 

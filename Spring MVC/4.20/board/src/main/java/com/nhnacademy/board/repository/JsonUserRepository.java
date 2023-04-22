@@ -78,7 +78,7 @@ public class JsonUserRepository implements UserRepository {
                 .findFirst();
 
         if(target.isPresent()){
-            target.get().update(user.getUserId(),user.getUserName(),user.getUserPassword());
+            target.get().update(user.getUserId(),user.getUserName(),user.getUserImage(),user.getUserPassword());
             writeJsonFile(users);
         }
     }

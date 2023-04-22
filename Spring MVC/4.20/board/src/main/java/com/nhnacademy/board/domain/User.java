@@ -6,6 +6,12 @@ public class User {
 
     private String userName;
 
+    private String userImage;
+
+    public String getUserImage() {
+        return userImage;
+    }
+
     private String userPassword;
 
     public String getUserId(){
@@ -20,15 +26,17 @@ public class User {
         return userPassword;
     }
 
-    public User(String userId, String userName, String userPassword) {
+    public User(String userId, String userName, String userImage,String userPassword) {
         this.userId = userId;
         this.userName = userName;
+        this.userImage = userImage;
         this.userPassword = userPassword;
     }
 
-    public void update(String userId, String userName, String password) {
+    public void update(String userId, String userName, String userImage, String password) {
         this.userId = userId;
         this.userName=userName;
+        this.userImage= userImage;
         this.userPassword = password;
     }
 }

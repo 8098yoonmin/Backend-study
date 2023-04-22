@@ -38,8 +38,9 @@ public class RootConfig {
         for(int i=1; i<=100; i++){
             String id="user" +i;
             String name = "사용자"+ i;
+            String profile = "/resources/프로필.jpeg";
             String password = "1234";
-            User user = new User(id,name,password);
+            User user = new User(id,name,profile,password);
             userRepository.save(user);
         }
         return userRepository;
