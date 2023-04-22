@@ -25,4 +25,10 @@ public class User {
         this.userName = userName;
         this.userPassword = userPassword;
     }
+
+    public void update(String userId, String userName, String password) {
+        this.userId = userId;
+        this.userName=userName;
+        this.userPassword = password;
+    }
 }
