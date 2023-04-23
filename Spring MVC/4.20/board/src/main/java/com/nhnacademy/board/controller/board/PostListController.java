@@ -76,4 +76,19 @@ public class PostListController {
         postService.delete(id, req);
         return "redirect:/board/list";
     }
+
+    @GetMapping("/update")
+    public String updateForm(@RequestParam(name="id")Long id, Model model) {
+        Post post = postService.getPostId(id);
+        model.addAttribute("post", post);
+        return "board/register";
+    }
+
+    @PostMapping("/update")
+    public String update(@RequestParam(name="Id")Long id, PostRegisterRequset postRegisterRequset, HttpServletRequest req) {
+        HttpSession session = req.getSession();
+        User user = (User)session.getAttribute("user");
+        postService.modify(id, new ConcretePost(id, postRegisterRequset.getTitle(), postRegisterRequset.getContent(),user.getUserId()));
+        return "redirect:/board/list";
+    }
 }

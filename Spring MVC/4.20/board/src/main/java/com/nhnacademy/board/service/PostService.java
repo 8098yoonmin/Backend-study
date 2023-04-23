@@ -46,4 +46,8 @@ public class PostService {
 
     }
 
+    public void modify(Long id, ConcretePost post){
+        ConcretePost lastPost = postRepository.getPost(id);
+        postRepository.modify(post);
+    }
 }

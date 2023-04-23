@@ -21,6 +21,7 @@
     </tbody>
   </table>
   <p>
+    <input type="hidden" name="Id" th:value="${post.id}" />
     <button type="submit" th:text="${post.id == null ? '등록' : '수정'}" ></button>
   </p>
 </form>
