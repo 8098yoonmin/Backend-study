@@ -70,4 +70,10 @@ public class PostListController {
         model.addAttribute("post", post);
         return "board/postView";
     }
+
+    @PostMapping("/delete")
+    public String delete(@RequestParam(name="Id")Long id, HttpServletRequest req) {
+        postService.delete(id, req);
+        return "redirect:/board/list";
+    }
 }

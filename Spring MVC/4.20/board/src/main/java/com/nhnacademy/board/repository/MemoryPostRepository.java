@@ -29,8 +29,8 @@ public class MemoryPostRepository implements PostRepository{
     }
 
     @Override
-    public Post remove(long id) {
-        return null;
+    public void remove(long id) {
+        postMap.remove(id);
     }
 
     @Override

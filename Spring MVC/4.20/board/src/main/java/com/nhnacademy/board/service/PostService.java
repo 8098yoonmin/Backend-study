@@ -2,9 +2,12 @@ package com.nhnacademy.board.service;
 
 import com.nhnacademy.board.domain.ConcretePost;
 import com.nhnacademy.board.domain.Post;
+import com.nhnacademy.board.domain.User;
 import com.nhnacademy.board.repository.PostRepository;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Service
@@ -35,6 +38,12 @@ public class PostService {
 
     public void register(Post post) { postRepository.register(post);}
 
+    public void delete(Long id, HttpServletRequest req) {
+        HttpSession session = req.getSession();
+        User user = (User)session.getAttribute("user");
+        ConcretePost post = postRepository.getPost(id);
+        postRepository.remove(id);
 
+    }
 
 }
