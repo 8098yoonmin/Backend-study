@@ -1,4 +1,4 @@
-package com.nhnacademy.board.controller;
+package com.nhnacademy.board.controller.admin;
 
 import com.nhnacademy.board.domain.User;
 import com.nhnacademy.board.repository.UserRepository;

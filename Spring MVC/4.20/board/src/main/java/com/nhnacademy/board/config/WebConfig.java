@@ -107,10 +107,10 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
         registry.addRedirectViewController("/favicon.ico","/resources/favicon.ico");
     }
 
-    @Bean
-    public User user(){
-        return new User("admin","관리자","/Users/yoonmin/Desktop/java_backend/backend-study/Spring MVC/4.20/board/src/main/webapp/resources/프로필.jpeg","1234");
-    }
+//    @Bean
+//    public User user(){
+//        return new User("admin","관리자","/Users/yoonmin/Desktop/java_backend/backend-study/Spring MVC/4.20/board/src/main/webapp/resources/프로필.jpeg","1234");
+//    }
 
 
     //todo#2 cookie 기반의 localReolver bean 등록

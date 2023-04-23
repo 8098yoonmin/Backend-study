@@ -1,6 +1,8 @@
-package com.nhnacademy.board.controller;
+package com.nhnacademy.board.controller.admin;
 
+import com.nhnacademy.board.controller.BaseController;
 import com.nhnacademy.board.domain.User;
+import com.nhnacademy.board.repository.UserRepository;
 import com.nhnacademy.board.request.LoginRequest;
 import com.nhnacademy.board.service.LoginService;
 import lombok.extern.slf4j.Slf4j;
@@ -24,14 +26,16 @@ import java.util.Objects;
 @Slf4j
 @Controller
 @RequestMapping("/login")
-public class LoginController implements BaseController{
+public class LoginController implements BaseController {
 
-    private final User user;
+    private final UserRepository userRepository;
     private final LoginService loginService;
-    public LoginController(LoginService loginService, User user) {
+    public LoginController(LoginService loginService, UserRepository userRepository) {
         this.loginService = loginService;
-        this.user = user;
+        this.userRepository = userRepository;
     }
+
+
 
 
     @GetMapping(value ="/")
@@ -46,15 +50,22 @@ public class LoginController implements BaseController{
 
     @PostMapping(value="/")
     public String doLogin(Model model, @Valid LoginRequest loginRequest, BindingResult bindingresult, HttpServletRequest request, RedirectAttributes redirectAttributes) {
+        User user = userRepository.getUserById(loginRequest.getUserId());
         if (bindingresult.hasFieldErrors()) {
             model.addAttribute("loginRequest", loginRequest);
             return "login/loginForm";
+        }
+        if(loginService.admin(user, loginRequest)) {
+            log.info("session:check");
+            HttpSession session = request.getSession(true);
+            session.setAttribute("user", user);
+            return "redirect:/user/list";
         }
         if (loginService.match(user, loginRequest)) {
             log.info("session:check");
             HttpSession session = request.getSession(true);
             session.setAttribute("user", user);
-            return "redirect:/user/list";
+            return "board/boardList";
         }
         redirectAttributes.addFlashAttribute("message", "로그인 실패");
         return "redirect:/login/";

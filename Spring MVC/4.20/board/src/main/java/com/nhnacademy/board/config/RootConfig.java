@@ -33,8 +33,8 @@ public class RootConfig {
     @Bean
     public UserRepository mapUserRepository(){
         UserRepository userRepository = new MapUserRepository();
-//        User admin = new User("admin", "관리자", "1234");
-//        userRepository.save(admin);
+        User admin = new User("admin", "관리자", "프로필.jpeg","1234");
+        userRepository.save(admin);
         for(int i=1; i<=100; i++){
             String id="user" +i;
             String name = "사용자"+ i;

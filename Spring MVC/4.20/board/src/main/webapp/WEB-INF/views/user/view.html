@@ -22,7 +22,7 @@
 
             <tr>
                 <th>프로필 이미지</th>
-                <td><img th:src="${user.userImage}"></td>
+                <td><img th:src="@{/resources/} + ${user.profileName}" /></td>
             </tr>
 
             <tr>

@@ -14,4 +14,12 @@ public class LoginService {
             return false;
         }
     }
+
+    public boolean admin(User user, LoginRequest loginRequest) {
+        if(user.getUserId().equals("admin") && user.getUserPassword().equals(("1234"))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
