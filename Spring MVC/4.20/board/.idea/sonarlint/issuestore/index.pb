@@ -5,13 +5,9 @@
 ,src/main/java/com/nhnacademy/board/Base.java,8/a/8a0d4a519238e62dcce2fd655cd43b7d8098a7ec
 S
 #src/main/webapp/resources/style.css,1/d/1d65978f36dc1db1fdcb53724da4c1ea93696fb4
-w
-Gsrc/main/java/com/nhnacademy/board/repository/MemoryPostRepository.java,1/b/1b4c1dfffd25d7530745d49a9351c44b7490ab6d
 a
 1src/main/java/com/nhnacademy/board/json/user.json,9/9/99e56de88fa69ae3166d374e5fb969f18869973b
 i
 9src/main/java/com/nhnacademy/board/WebAppInitializer.java,7/e/7e8fd92c9c6534a1d846076d3fee911c39c472c6
-O
-src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 u
 Esrc/main/java/com/nhnacademy/board/common/CommonPropertiesConfig.java,0/3/034c2ef3600e194100fb1b4d533b04d828b5d54e

@@ -33,6 +33,8 @@ public class User {
         this.userPassword = userPassword;
     }
 
+    public User() {}
+
     public void update(String userId, String userName, String userImage, String password) {
         this.userId = userId;
         this.userName=userName;
