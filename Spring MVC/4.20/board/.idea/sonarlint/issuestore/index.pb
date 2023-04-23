@@ -35,8 +35,6 @@ q
 Asrc/main/java/com/nhnacademy/board/repository/UserRepository.java,c/a/ca691a717ca26cf1b66e6c7e7af5e7e1bc322955
 q
 Asrc/main/java/com/nhnacademy/board/repository/PostRepository.java,8/5/85244c4a291c2013e06c34d22d71cf8bffb35751
-w
-Gsrc/main/java/com/nhnacademy/board/repository/MemoryPostRepository.java,1/b/1b4c1dfffd25d7530745d49a9351c44b7490ab6d
 }
 Msrc/main/java/com/nhnacademy/board/controller/admin/UserUpdateController.java,1/0/10f6b12d6fd12f9f75ca38d763eb08ab4e404402
 i

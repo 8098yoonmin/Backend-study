@@ -43,12 +43,13 @@ public class PostListController {
         return "board/register";
     }
 
-//    @PostMapping("/register")
-//    public String register(@Valid PostRegisterRequset postRegisterRequset, BindingResult bindingResult, HttpServletRequest req) {
-//        Long id = postService.getId();
-//        HttpSession session = req.getSession();
-//        User user = (User)session.getAttribute("user");
-//        postService.register(new Post(id, postRegisterRequset.))
-//
-//    }
+    @PostMapping("/register")
+    public String register(@Valid PostRegisterRequset postRegisterRequset, BindingResult bindingResult, HttpServletRequest req) {
+        Long id = postService.getId();
+        //로그인 할 때 생성했던 세션
+        HttpSession session = req.getSession();
+        User user = (User)session.getAttribute("user");
+        postService.register(new ConcretePost(id, postRegisterRequset.getTitle(), postRegisterRequset.getContent(), user.getUserId()));
+        return "redirect:/board/list";
+    }
 }

@@ -25,6 +25,7 @@ public class PostService {
         return post;
     }
 
+    //ㄱㅔ시물번호
     public Long getId() {
         List<Post> postList = postRepository.getPosts();
         int size = postList.size()-1;
