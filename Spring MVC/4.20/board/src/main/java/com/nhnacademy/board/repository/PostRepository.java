@@ -1,5 +1,6 @@
 package com.nhnacademy.board.repository;
 
+import com.nhnacademy.board.domain.ConcretePost;
 import com.nhnacademy.board.domain.Post;
 
 import java.util.List;
@@ -9,6 +10,6 @@ public interface PostRepository {
     void modify(Post post);
     Post remove(long id);
 
-    Post getPost(long id);
+    ConcretePost getPost(long id);
     List<Post> getPosts();
 }

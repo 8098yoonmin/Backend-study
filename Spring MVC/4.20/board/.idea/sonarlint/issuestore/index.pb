@@ -5,8 +5,6 @@
 ,src/main/java/com/nhnacademy/board/Base.java,8/a/8a0d4a519238e62dcce2fd655cd43b7d8098a7ec
 a
 1src/main/java/com/nhnacademy/board/json/user.json,9/9/99e56de88fa69ae3166d374e5fb969f18869973b
-{
-Ksrc/main/java/com/nhnacademy/board/controller/admin/UserViewController.java,c/0/c0f9163b2d8af4cd72c27b4094dd9e888d72bc88
 u
 Esrc/main/java/com/nhnacademy/board/common/CommonPropertiesConfig.java,0/3/034c2ef3600e194100fb1b4d533b04d828b5d54e
 i
@@ -33,16 +31,12 @@ k
 ;src/main/java/com/nhnacademy/board/service/UserService.java,f/9/f9fde83527541c53989bf33755afbc3c60ddb6ab
 q
 Asrc/main/java/com/nhnacademy/board/repository/UserRepository.java,c/a/ca691a717ca26cf1b66e6c7e7af5e7e1bc322955
-q
-Asrc/main/java/com/nhnacademy/board/repository/PostRepository.java,8/5/85244c4a291c2013e06c34d22d71cf8bffb35751
 }
 Msrc/main/java/com/nhnacademy/board/controller/admin/UserUpdateController.java,1/0/10f6b12d6fd12f9f75ca38d763eb08ab4e404402
 i
 9src/main/java/com/nhnacademy/board/config/RootConfig.java,1/a/1adf8eea87e404e74799e39586bb7293917b044d
 \
 ,src/main/webapp/WEB-INF/views/user/view.html,6/b/6bd6fe3cc90e6e07806ecdf40f43dacfd3c1cdf3
-b
-2src/main/webapp/WEB-INF/views/board/boardList.html,b/2/b256ca465db998bed427cbf179e92370345e3000
 b
 2src/main/webapp/WEB-INF/views/login/loginForm.html,4/9/4903e4153de973a1d5447c41af5db91fd00e26c9
 `

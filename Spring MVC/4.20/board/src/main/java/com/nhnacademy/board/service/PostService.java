@@ -20,12 +20,12 @@ public class PostService {
         return postRepository.getPosts();
     }
 
-    public Post getPostId(Long id) {
-        Post post = postRepository.getPost(id);
+    public ConcretePost getPostId(Long id) {
+        ConcretePost post = postRepository.getPost(id);
         return post;
     }
 
-    //ㄱㅔ시물번호
+    //ㄱㅔ시물번ㅊ
     public Long getId() {
         List<Post> postList = postRepository.getPosts();
         int size = postList.size()-1;

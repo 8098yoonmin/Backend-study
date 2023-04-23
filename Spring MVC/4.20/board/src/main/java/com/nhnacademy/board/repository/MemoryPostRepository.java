@@ -1,5 +1,6 @@
 package com.nhnacademy.board.repository;
 
+import com.nhnacademy.board.domain.ConcretePost;
 import com.nhnacademy.board.domain.Post;
 
 import java.util.HashMap;
@@ -33,8 +34,8 @@ public class MemoryPostRepository implements PostRepository{
     }
 
     @Override
-    public Post getPost(long id) {
-        return null;
+    public ConcretePost getPost(long id) {
+        return (ConcretePost) postMap.get(id);
     }
 
 

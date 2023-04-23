@@ -11,9 +11,12 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.naming.Binding;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
@@ -51,5 +54,20 @@ public class PostListController {
         User user = (User)session.getAttribute("user");
         postService.register(new ConcretePost(id, postRegisterRequset.getTitle(), postRegisterRequset.getContent(), user.getUserId()));
         return "redirect:/board/list";
+    }
+
+    @GetMapping("/view")
+    public String view(@RequestParam(name="id")Long id, Model model, HttpServletRequest req, HttpServletResponse resp) {
+        ConcretePost post = postService.getPostId(id);
+        //쿠키?
+//        HttpSession session = req.getSession(true);
+//
+//        Cookie cookie = new Cookie("VIEW"+id,"view");
+//        cookie.setMaxAge(60*60*24);
+//        cookie.setPath("/");
+//        resp.addCookie(cookie);
+
+        model.addAttribute("post", post);
+        return "board/postView";
     }
 }
