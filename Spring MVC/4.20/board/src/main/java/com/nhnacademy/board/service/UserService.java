@@ -23,10 +23,17 @@ public class UserService {
         return user;
     }
 
+
     public List<User> getUserList(){
         return userRepository.getUsers();
     }
 
     public void delete(String id) { userRepository.deleteById(id);}
 
+    public void register(User user) {
+//        if(userRepository.existById(user.getUserId())){
+//            throw new Exception();
+//        }
+        userRepository.save(user);
+    }
 }

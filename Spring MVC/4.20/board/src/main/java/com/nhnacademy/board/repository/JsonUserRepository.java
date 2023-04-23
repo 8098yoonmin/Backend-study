@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.nhnacademy.board.domain.Student;
 import com.nhnacademy.board.domain.User;
 
 import java.io.*;
@@ -78,7 +77,7 @@ public class JsonUserRepository implements UserRepository {
                 .findFirst();
 
         if(target.isPresent()){
-            target.get().update(user.getUserId(),user.getUserName(),user.getUserImage(),user.getUserPassword());
+            target.get().update(user.getUserId(),user.getUserName(),user.getProfileName(),user.getUserPassword());
             writeJsonFile(users);
         }
     }

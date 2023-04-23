@@ -6,11 +6,7 @@ public class User {
 
     private String userName;
 
-    private String userImage;
-
-    public String getUserImage() {
-        return userImage;
-    }
+    private String profileName;
 
     private String userPassword;
 
@@ -25,20 +21,24 @@ public class User {
     public String getUserPassword() {
         return userPassword;
     }
+    public String getProfileName() {
+        return profileName;
+    }
 
-    public User(String userId, String userName, String userImage,String userPassword) {
+
+    public User(String userId, String userName, String profileName, String userPassword) {
         this.userId = userId;
         this.userName = userName;
-        this.userImage = userImage;
+        this.profileName = profileName;
         this.userPassword = userPassword;
     }
 
     public User() {}
 
-    public void update(String userId, String userName, String userImage, String password) {
+    public void update(String userId, String userName, String profileName, String password) {
         this.userId = userId;
         this.userName=userName;
-        this.userImage= userImage;
+        this.profileName = profileName;
         this.userPassword = password;
     }
 }

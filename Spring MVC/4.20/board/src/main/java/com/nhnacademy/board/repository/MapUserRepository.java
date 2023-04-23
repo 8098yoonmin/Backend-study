@@ -1,6 +1,5 @@
 package com.nhnacademy.board.repository;
 
-import com.nhnacademy.board.domain.Student;
 import com.nhnacademy.board.domain.User;
 
 import java.util.List;

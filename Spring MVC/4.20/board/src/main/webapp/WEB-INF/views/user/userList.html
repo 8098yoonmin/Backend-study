@@ -25,7 +25,7 @@
   <tr th:each="item : ${userList}" >
     <td th:text="${item.userId}"></td>
     <td th:text="${item.userName}"></td>
-    <td> <img th:src= "${item.userImage}"></td>
+    <td> <img th:src= "@{/resources/} + ${item.profileName}" /></td>
     <td th:text="${item.userPassword}"></td>
     <td>
       <a th:href="@{/user/view(id=${item.userId})}">조회</a>

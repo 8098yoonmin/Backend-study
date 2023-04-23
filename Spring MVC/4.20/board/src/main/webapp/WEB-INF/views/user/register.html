@@ -9,27 +9,28 @@
     <body>
 <!--    <th:block th:insert="~{login/loginInfo :: userinfo}" ></th:block>-->
 
-        <form method="post" th:action="@{ ${ user.userId == null ? '/user/register' : '/user/update' } }" th:object="${user}" >
+        <form method="post" th:action="@{ ${ user.userId == null ? '/user/register' : '/user/update' } }" th:object="${user}"
+            enctype="multipart/form-data">
             <table>
                 <caption></caption>
                 <tbody>
                     <tr>
                         <th>ID</th>
-                        <td><input type="text" th:field="*{userId}"  required /></td>
+                        <td><input type="text" name="userId" th:field="*{userId}"  required /></td>
                     </tr>
                     <tr>
                         <th>이름</th>
-                        <td><input type="text" th:field="*{userName}" required /></td>
+                        <td><input type="text" name="userName" th:field="*{userName}" required /></td>
                     </tr>
                     <tr>
                         <th>프로필이미지</th>
                         <td>
-                            <input type="file" th:field="*{userImage}" value="M"   />
+                            <input type="file" name="profileName" th:field="*{profileName}" />
                         </td>
                     </tr>
                     <tr>
                         <th>비밀번호</th>
-                        <td><input type="number" th:field="*{userPassword}" required /></td>
+                        <td><input type="number" name="userPassword" th:field="*{userPassword}" required /></td>
                     </tr>
                 </tbody>
             </table>

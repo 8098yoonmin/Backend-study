@@ -12,6 +12,7 @@ import org.springframework.web.servlet.FrameworkServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;
+import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
 
 /**
@@ -51,6 +52,14 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
         DispatcherServlet dispatcherServlet = (DispatcherServlet) super.createDispatcherServlet(servletAppContext);
         dispatcherServlet.setThrowExceptionIfNoHandlerFound(true);
         return dispatcherServlet;
+    }
+
+    @Override
+    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+        MultipartConfigElement multipartConfigElement
+                = new MultipartConfigElement("/tmp/", -1, -1, 1024);
+
+        registration.setMultipartConfig(multipartConfigElement);
     }
 
 }
