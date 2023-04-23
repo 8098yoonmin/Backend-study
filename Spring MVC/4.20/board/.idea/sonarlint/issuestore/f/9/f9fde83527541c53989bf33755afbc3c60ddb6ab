@@ -1,0 +1,7 @@
+
+r
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "user".(ó“§¹
+Q	java:S125"<This block of commented-out lines of code should be removed.(„À¾ô
+W	java:S125""<This block of commented-out lines of code should be removed.(íë»e8ðýÿâú0
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›

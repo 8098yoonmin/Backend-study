@@ -65,7 +65,7 @@ public class LoginController implements BaseController {
             log.info("session:check");
             HttpSession session = request.getSession(true);
             session.setAttribute("user", user);
-            return "board/boardList";
+            return "redirect:/board/list";
         }
         redirectAttributes.addFlashAttribute("message", "로그인 실패");
         return "redirect:/login/";

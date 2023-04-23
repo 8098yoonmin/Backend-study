@@ -4,12 +4,13 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.nhnacademy.board.domain.Gender;
-import com.nhnacademy.board.domain.Student;
+import com.nhnacademy.board.domain.ConcretePost;
+import com.nhnacademy.board.domain.Post;
 import com.nhnacademy.board.domain.User;
 import com.nhnacademy.board.repository.MapUserRepository;
+import com.nhnacademy.board.repository.MemoryPostRepository;
+import com.nhnacademy.board.repository.PostRepository;
 import com.nhnacademy.board.repository.UserRepository;
-import org.apache.commons.math3.random.RandomDataGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -44,6 +45,13 @@ public class RootConfig {
             userRepository.save(user);
         }
         return userRepository;
+    }
+
+    @Bean
+    public PostRepository postRepository() {
+        PostRepository postRepository = new MemoryPostRepository();
+        postRepository.register(new ConcretePost(1L, "첫번째 게시글","hi","yoom" ));
+        return postRepository;
     }
 
 }
