@@ -11,21 +11,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StudentApiControllerTest {
 
-    @Autowired
+//    @Autowired
     WebApplicationContext context;
 
     MockMvc mockMvc;
 
     @BeforeEach
     void setup() {
-        mockMvc = MockMvcBuilder
-                .webAppContextSetup(context)
-                .
+   //     mockMvc = MockMvcBuilder
+  //              .webAppContextSetup(context)
+ //                .
     }
 
     @Test
     void getStudent() throws Exception {
-        mockMvc.perform
+//        mockMvc.perform
     }
 
     @Test

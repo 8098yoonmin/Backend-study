@@ -1,0 +1,17 @@
+
+r
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "post".(ý„õ„
+\
+java:S2153#"FRemove the boxing to "Long"; The argument is already of the same type.(¥ªèó
+N
+java:S1854,"8Remove this useless assignment to local variable "post".(ý„õ„
+S
+java:S1854+"8Remove this useless assignment to local variable "user".(¾˜ îüÿÿÿÿ
+D
+java:S1481+")Remove this unused "user" local variable.(¾˜ îüÿÿÿÿ
+?
+java:S1481,")Remove this unused "post" local variable.(ý„õ„
+Y
+java:S18542"<Remove this useless assignment to local variable "lastPost".(ê«»Ô8¸¸ßòú0
+J
+java:S14812"-Remove this unused "lastPost" local variable.(ê«»Ô8¹¸ßòú0
