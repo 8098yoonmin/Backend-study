@@ -23,7 +23,7 @@ public class FirstConnection{
                 System.out.print(result.getInt(1)+" ");
                 System.out.print(result.getString(2) +" ");
                 System.out.print(result.getString(3) +" ");
-                System.out.print(result.getString(4) +" ");
+                System.out.println(result.getString(4) +" ");
 
             }
             result.close();
