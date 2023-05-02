@@ -23,6 +23,7 @@
         Connection connection = dbairline.getConnection();
         String sqlQuery = "SELECT * FROM RESERVATION WHERE passengerNo= ?";
         PreparedStatement statement = connection.prepareStatement(sqlQuery);
+//        ?id= { id }
         statement.setString(1, request.getParameter("id"));
 
         ResultSet result = statement.executeQuery();
