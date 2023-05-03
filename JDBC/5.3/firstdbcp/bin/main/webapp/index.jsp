@@ -1,8 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import ="com.nhnacademy.firstdbcp.utils.DBUtils"%>
 <%@ page import ="java.sql.*"%>
-<%@ page import ="javax.naming.InitialContext, javax.naming.NamingException, javax.sql.DataSource" %>
-<%@ page import="javax.naming.Context" %>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,8 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import ="com.nhnacademy.firstdbcp.utils.DBUtils"%>
 <%@ page import ="java.sql.*"%>
-<%@ page import ="javax.naming.InitialContext, javax.naming.NamingException, javax.sql.DataSource" %>
-<%@ page import="javax.naming.Context" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,13 +27,13 @@
         while(result.next()) {
             int id = result.getInt(1);
             String name = result.getString(2);
-            int wh = result.getInt(3);
+            int grade = result.getInt(3);
             int age = result.getInt(4);
     %>
     <tr>
         <td><a href="reservation.jsp?id=<%=id %>"><%=id %></a></td>
         <td><%=name %></td>
-        <td><%=wh%></td>
+        <td><%=grade%></td>
         <td><%=age %></td>
 
     </tr>

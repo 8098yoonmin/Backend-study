@@ -16,7 +16,7 @@
 <table border="1">
   <tr>
     <td>번호</td>
-    <td>예약</td>
+    <td>항공편</td>
     <td>날짜</td>
   </tr>
   <%
@@ -33,7 +33,7 @@
       String date = String.valueOf(result.getDate(3));
   %>
   <tr>
-    <td><%=id %></td>
+    <td><a href="airinfo.jsp?id=<%=res%>"><%=id %></a></td>
     <td><%=res %></td>
     <td><%=date%></td>
   </tr>
