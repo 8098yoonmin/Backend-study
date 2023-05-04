@@ -7,7 +7,7 @@
     <insert id="save" parameterType="com.nhnacademy.todo.domain.Event">
         insert into event set
                               user_id= #{userId},
-                              subject=#{subjecy},
+                              subject=#{subject},
                               event_at=#{eventAt},
                               created_at=now()
 

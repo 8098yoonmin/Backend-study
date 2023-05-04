@@ -23,7 +23,8 @@ public class DbEventServiceImpl implements EventService {
     public EventCreatedResponseDto insert(EventDto eventDto) {
         Event event = new Event(UserIdStore.getUserId(), eventDto.getSubject(), eventDto.getEventAt());
         eventMapper.save(event);
-        return new EventCreatedResponseDto(event.getId());
+        throw new RuntimeException();
+//        return new EventCreatedResponseDto(event.getId());
     }
 
     @Override

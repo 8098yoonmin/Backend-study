@@ -1,12 +1,12 @@
 package com.nhnacademy.todo.config;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -14,6 +14,7 @@ import java.io.IOException;
 @Configuration
 @RequiredArgsConstructor
 @MapperScan(basePackages = "com.nhnacademy.todo.mapper.**")
+@EnableTransactionManagement
 public class MybatisConfig {
     private final DataSource dataSource;
 
