@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @EnableAspectJAutoProxy
 @Configuration
-
+//에러가 터지면 rollback되도록 처리
 public class TransactionalAspect {
     private final TransactionManager transactionManager;
 

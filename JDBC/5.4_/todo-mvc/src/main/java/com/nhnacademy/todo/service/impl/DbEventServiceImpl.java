@@ -10,6 +10,7 @@ import com.nhnacademy.todo.share.UserIdStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
 @Primary
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class DbEventServiceImpl implements EventService {
     private final EventMapper eventMapper;
     @Override
