@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nhnacademy.todo.mapper.EventMapper" >
+
+    <insert id="save" parameterType="com.nhnacademy.todo.domain.Event">
+        insert into event set
+                              user_id= #{userId},
+                              subject=#{subjecy},
+                              event_at=#{eventAt},
+                              created_at=now()
+
+--     꽂힌 값을 return 하려면?
+        <selectKey keyProperty="id" resultType="Long">
+            select last_insert_id()
+        </selectKey>
+
+
+    </insert>
+</mapper>
