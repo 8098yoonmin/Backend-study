@@ -4,6 +4,7 @@ import com.nhnacademy.todo.domain.Event;
 import com.nhnacademy.todo.dto.DailyRegisterCountResponseDto;
 import com.nhnacademy.todo.dto.EventCreatedResponseDto;
 import com.nhnacademy.todo.dto.EventDto;
+import com.nhnacademy.todo.exception.EventNotFoundException;
 import com.nhnacademy.todo.mapper.EventMapper;
 import com.nhnacademy.todo.service.EventService;
 import com.nhnacademy.todo.share.UserIdStore;
@@ -18,15 +19,15 @@ import java.util.List;
 @Primary
 @Service
 @RequiredArgsConstructor
-@Transactional
+@Transactional // (rollbackFor = {EventNotFoundException.class})
 public class DbEventServiceImpl implements EventService {
     private final EventMapper eventMapper;
     @Override
     public EventCreatedResponseDto insert(EventDto eventDto) {
         Event event = new Event(UserIdStore.getUserId(), eventDto.getSubject(), eventDto.getEventAt());
         eventMapper.save(event);
-        throw new RuntimeException();
-//        return new EventCreatedResponseDto(event.getId());
+//        throw new RuntimeException();
+        return new EventCreatedResponseDto(event.getId());
     }
 
     @Override

@@ -16,7 +16,7 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
 import java.util.List;
 
 @RequiredArgsConstructor
-@EnableAspectJAutoProxy
+//@EnableAspectJAutoProxy
 @Configuration
 //에러가 터지면 rollback되도록 처리
 public class TransactionalAspect {

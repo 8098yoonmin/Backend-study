@@ -23,7 +23,7 @@ public class MybatisConfig {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setMapperLocations(resolver.getResources("classpath:**/maps/*.xml"));
+        sessionFactory.setMapperLocations(resolver.getResources("classpath*:**/maps/*.xml"));
 
         //
         org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
