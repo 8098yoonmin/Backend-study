@@ -14,8 +14,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
+//여기 service가 mybatis에서 이용하는 파일인듯?
 @Primary
 @Service
 @RequiredArgsConstructor
@@ -30,39 +32,49 @@ public class DbEventServiceImpl implements EventService {
         return new EventCreatedResponseDto(event.getId());
     }
 
+    //eventmapper와 동일한 파라미터?
     @Override
     public long update(long eventId, EventDto eventDto) {
-        return 0;
+//        Event target = new Event(UserIdStore.getUserId(), eventDto.getSubject(), eventDto.getEventAt());
+//        target.setId(eventId);
+        eventMapper.modify(eventId,eventDto);
+        return eventId;
     }
 
     @Override
     public void deleteOne(long eventId) {
-
+        eventMapper.deleteOne(eventId);
     }
 
     @Override
     public EventDto getEvent(long eventId) {
-        return null;
+        EventDto event = eventMapper.getEvent(eventId);
+        return new EventDto(event.getId(), event.getSubject(),event.getEventAt());
     }
 
     @Override
     public List<EventDto> getEventListByMonthly(Integer year, Integer month) {
-        return null;
+        List<EventDto> eventList = eventMapper.getEventsByMonth(year, month);
+        return eventList;
     }
+
 
     @Override
     public List<EventDto> getEventListBydaily(Integer year, Integer month, Integer day) {
-        return null;
+        List<EventDto> eventList = eventMapper.getEventsByDaily(year, month, day);
+        return eventList;
     }
 
     @Override
     public DailyRegisterCountResponseDto getDayliyRegisterCount(LocalDate targetDate) {
-        return null;
+        long count = eventMapper.countDailyRegister( targetDate);
+        return new DailyRegisterCountResponseDto(count);
     }
+
 
     @Override
     public void deleteEventByDaily(LocalDate eventAt) {
-
+        eventMapper.deleteByDaily(eventAt);
     }
 
     @Override

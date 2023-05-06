@@ -5,7 +5,7 @@ X-USER-ID: marco
 
 {
   "subject" : "Spring framework 학습",
-  "eventAt": "2023-05-05"
+  "eventAt": "2023-05-08"
 }
 
 ###조회
@@ -14,34 +14,44 @@ Accept: application/json
 X-USER-ID: marco
 
 
-###삭제
-DELETE http://localhost:8080/api/calendar/events/8
+###수정
+PUT http://localhost:8080/api/calendar/events/31
 Content-Type: application/json
 X-USER-ID: marco
 
+{
+  "subject" : "수정등장!",
+  "eventAt": "2023-05-07"
+}
+
+
 ###삭제
-DELETE http://localhost:8080/api/calendar/events/daily/2022-02-15
+DELETE http://localhost:8080/api/calendar/events/3
 Content-Type: application/json
 X-USER-ID: marco
 
 
+###삭제
+DELETE http://localhost:8080/api/calendar/events/daily/2023-05-07
+Content-Type: application/json
+X-USER-ID: marco
 
 
 
 ###일일등록 카운트
-GET http://localhost:8080/api/calendar/daily-register-count?date=2023-02-15
+GET http://localhost:8080/api/calendar/daily-register-count?date=2023-05-08
 Accept: application/json
 X-USER-ID: marco
 
 
 ###월별조회
-GET http://localhost:8080/api/calendar/events/?year=2023&month=2
+GET http://localhost:8080/api/calendar/events/?year=2023&month=5
 Accept: application/json
 X-USER-ID: marco
 
 
 ###일별조회
-GET http://localhost:8080/api/calendar/events/?year=2023&month=02&day=15
+GET http://localhost:8080/api/calendar/events/?year=2023&month=05&day=8
 Accept: application/json
 X-USER-ID: marco
 

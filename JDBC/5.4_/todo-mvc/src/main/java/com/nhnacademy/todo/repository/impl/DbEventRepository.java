@@ -5,6 +5,7 @@ import com.nhnacademy.todo.repository.EventRepository;
 import com.nhnacademy.todo.share.UserIdStore;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.cglib.core.Local;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
@@ -16,6 +17,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
+//이 파일은 jdbc를 이용해 데이터를 처리해줄 때 사용하는 것 같음. my batis이용할 땐 사용 x
 //primary 어노테이션?
 @Slf4j
 @Primary
@@ -70,11 +72,48 @@ public class DbEventRepository implements EventRepository {
 
     @Override
     public void update(Event event) {
+        try {
+            connection = dataSource.getConnection();
+        } catch(SQLException e ) {
+            throw new RuntimeException(e);
+        }
+
+        try{
+            connection.setAutoCommit(false);
+
+            String sql = "insert into event(subject, user_id, event_at) values(?,?,?)";
+
+
+        } catch(SQLException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
     @Override
     public void deleteById(String userId, long eventId) {
+        try{
+            connection = dataSource.getConnection();
+        } catch(SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        String sql = "delete from event where id= ? and user_id= ?";
+        try{
+            psmt = connection.prepareStatement(sql);
+            psmt.setString(1, userId);
+            psmt.setLong(2, eventId);
+            rs = psmt.executeQuery();
+
+            if (rs.next()) {
+                LocalDate localDate = rs.getDate("event_at").toLocalDate();
+                Event event = new Event(rs.getString("user_id"), rs.getString("subject"), localDate);
+                event.setId(rs.getLong("id"));
+                result = event;
+            }
+        } catch(SQLException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

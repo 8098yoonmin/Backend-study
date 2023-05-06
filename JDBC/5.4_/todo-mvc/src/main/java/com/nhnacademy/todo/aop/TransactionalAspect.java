@@ -15,6 +15,7 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
 
 import java.util.List;
 
+//aop는 @EnableTransactionManagement 어노테이션을 붙이면 따로 만들지 않아도 됨
 @RequiredArgsConstructor
 //@EnableAspectJAutoProxy
 @Configuration

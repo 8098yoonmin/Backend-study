@@ -2,6 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="com.nhnacademy.todo.mapper.EventMapper" >
 
     <insert id="save" parameterType="com.nhnacademy.todo.domain.Event">
@@ -18,4 +19,42 @@
 
 
     </insert>
+
+    <update id="modify">
+
+        update event set
+                        subject= #{event.subject},
+                        event_at= #{event.eventAt},
+                        created_at = now()
+                    where
+                        id = #{eventId}
+<!--        <selectKey keyProperty="id" resultType="Long">-->
+<!--            select update_insert_id();-->
+<!--        </selectKey>-->
+    </update>
+
+    <delete id="deleteOne" >
+        delete from event where id=#{eventId}
+    </delete>
+
+    <delete id="deleteByDaily">
+        delete from event where event_at= #{eventAt}
+    </delete>
+
+    <select id="getEvent" resultType="com.nhnacademy.todo.dto.EventDto">
+        select * from event where id= #{eventId}
+    </select>
+
+    <select id="countDailyRegister" resultType="long">
+        select count(*) from event where event_at = #{targetDate}
+    </select>
+
+    <select id="getEventsByMonth" resultType="com.nhnacademy.todo.dto.EventDto">
+        select * from event where year(event_at)= #{year} and month(event_at) = #{month}
+
+    </select>
+
+    <select id="getEventsByDaily" resultType="com.nhnacademy.todo.dto.EventDto">
+        select * from event where year(event_at)=#{year} and month(event_at)=#{month} and day(event_at)=#{day}
+    </select>
 </mapper>
