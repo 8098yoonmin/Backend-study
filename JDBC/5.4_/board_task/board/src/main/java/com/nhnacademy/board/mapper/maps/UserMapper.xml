@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.nhnacademy.board.mapper.DbMapper" >
+    <insert id="register" parameterType="com.nhnacademy.board.domain.User">
+    insert into users set
+                          user_id= #{id},
+                          user_pw=#{password},
+                          user_name=#{name},
+                          filename=#{profileFileName}
+
+    </insert>
+    <select id="getAllUsers" resultType="com.nhnacademy.board.domain.User">
+        select * from users
+    </select>
+
+</mapper>
