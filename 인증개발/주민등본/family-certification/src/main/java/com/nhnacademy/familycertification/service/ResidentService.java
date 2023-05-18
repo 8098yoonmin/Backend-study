@@ -35,9 +35,11 @@ public class ResidentService {
         return residentRepository.saveAndFlush(resident);
     }
 
-    public Resident modify(String name, ResidentModifyDTO residentModifyDTO) {
+    public Resident modify(Long serialNum, ResidentModifyDTO residentModifyDTO) {
 
-        Resident resident = residentRepository.findByName(name).orElseThrow(NotFoundResidentException::new);
+        Resident resident = residentRepository.findById(serialNum).orElseThrow(NotFoundResidentException::new);
+
+//        Resident resident = residentRepository.findByName(name).orElseThrow(NotFoundResidentException::new);
 
         resident.modifyResidentInfo(
             residentModifyDTO.getName(),

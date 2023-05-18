@@ -8,7 +8,6 @@ import java.util.Optional;
 public interface ResidentRepository extends JpaRepository<Resident,Long> {
 
 //    Optional<Resident> findBy(String residentId);
-    Optional<Resident> findByName(String name);
 
 
 }

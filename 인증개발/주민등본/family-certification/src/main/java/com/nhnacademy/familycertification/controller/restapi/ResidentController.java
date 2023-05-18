@@ -22,9 +22,9 @@ public class ResidentController {
         return residentService.register(residentRegisterDTO);
     }
 
-    @PostMapping
-    public Resident modifyResident(String name, @RequestBody ResidentModifyDTO residentModifyDTO) {
-        return residentService.modify(name, residentModifyDTO);
+    @PutMapping("/{serialNumber}")
+    public Resident modifyResident(@PathVariable(name="serialNumber") Long serialNumber, @RequestBody ResidentModifyDTO residentModifyDTO) {
+        return residentService.modify(serialNumber, residentModifyDTO);
     }
 
 //    @PostMapping("/{serialNumber}/relationship")
