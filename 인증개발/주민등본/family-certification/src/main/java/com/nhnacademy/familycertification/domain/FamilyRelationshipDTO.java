@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FamilyRelationshipDTO {
+    //대상가족 주민일련번호
     private Long familySerialNumber;
     private String familyRelationshipCode;
 }

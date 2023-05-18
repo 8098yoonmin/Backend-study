@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 public class ResidentController {
 
     private final ResidentService residentService;
-    private final FamilyRelationshipRepository familyRelationshipRepository;
 
     @PostMapping
     public Resident registerResident(@RequestBody ResidentRegisterDTO residentRegisterDTO) {

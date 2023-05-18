@@ -2,6 +2,7 @@ package com.nhnacademy.familycertification.service;
 
 
 import com.nhnacademy.familycertification.domain.FamilyRelationshipDTO;
+import com.nhnacademy.familycertification.domain.FamilyRelationshipReportDTO;
 import com.nhnacademy.familycertification.entity.FamilyRelationship;
 import com.nhnacademy.familycertification.entity.Resident;
 import com.nhnacademy.familycertification.repository.FamilyRelationshipRepository;
@@ -32,5 +33,10 @@ public class FamilyRelationshipService {
 
         return familyRelationshipRepository.saveAndFlush(familyRelationship);
     }
+
+//    public FamilyRelationship modifyFamilyRelationship(FamilyRelationshipReportDTO familyRelationshipReportDTO) {
+//
+////        Resident resident = residentRepository.findById()
+//    }
 
 }
