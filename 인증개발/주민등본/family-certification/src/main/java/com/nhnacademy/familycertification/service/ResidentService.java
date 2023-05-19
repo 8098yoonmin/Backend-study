@@ -39,8 +39,6 @@ public class ResidentService {
 
         Resident resident = residentRepository.findById(serialNum).orElseThrow(NotFoundResidentException::new);
 
-//        Resident resident = residentRepository.findByName(name).orElseThrow(NotFoundResidentException::new);
-
         resident.modifyResidentInfo(
             residentModifyDTO.getName(),
             residentModifyDTO.getRegistrationBaseAddress(),

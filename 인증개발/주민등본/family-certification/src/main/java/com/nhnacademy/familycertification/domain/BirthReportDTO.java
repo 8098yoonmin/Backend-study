@@ -8,7 +8,6 @@ import java.time.LocalDateTime;
 public class BirthReportDTO {
     private Long residentSerialNumber;
     private String birthDeathTypeCode;
-    private Long reportResidentSerialNumber;
     private LocalDateTime birthDeathReportDate;
     private String birthReportQualificationsCode;
     private String emailAddress;

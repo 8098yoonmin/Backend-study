@@ -17,9 +17,9 @@ public class FamilyRelationship {
     @EmbeddedId
     private Pk pk;
 
-    @MapsId("familyResidentSerialNumber")
-    @ManyToOne
-    @JoinColumn(name = "family_resident_serial_number")
+    @MapsId("baseResidentSerialNumber")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "base_resident_serial_number")
     private Resident resident;
 
     @Setter
@@ -32,10 +32,19 @@ public class FamilyRelationship {
     @Getter
     @Embeddable
     public static class Pk implements Serializable {
-        @Column(name = "family_resident_serial_number")
-        private Long familyResidentSerialNumber;
 
         @Column(name = "base_resident_serial_number")
         private Long baseResidentSerialNumber;
+
+        @Column(name = "family_resident_serial_number")
+        private Long familyResidentSerialNumber;
+
+
+    }
+
+    public void modifyRelationInfo(String relationship) {
+        if(familyRelationshipCode != null){
+            familyRelationshipCode = relationship;
+        }
     }
 }

@@ -1,15 +1,15 @@
-POST /residents/2/relationship
+POST /residents/7/relationship
 Content-Type: application/json
 Host: localhost:8080
 
 {
-  "familySerialNumber": 123,
+  "familySerialNumber": 3,
   "familyRelationshipCode": "부"
 }
 
 ###
 
-PUT /residents/10/relationship/123
+PUT /residents/7/relationship/3
 Content-Type: application/json
 Host: localhost:8080
 
@@ -19,5 +19,5 @@ Host: localhost:8080
 
 ###
 
-DELETE /residents/10/relationship/123
+DELETE /residents/7/relationship/4
 Host: localhost:8080
