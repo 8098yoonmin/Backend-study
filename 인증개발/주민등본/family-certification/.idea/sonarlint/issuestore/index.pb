@@ -66,22 +66,14 @@ Isrc/main/java/com/nhnacademy/familycertification/domain/HouseholdDTO.java,4/2/
 csrc/main/java/com/nhnacademy/familycertification/repository/BirthDeathReportResidentRepository.java,5/d/5d8f38457b7bae0d5aafd7c5788005c10834137f
 ƒ
 Ssrc/main/java/com/nhnacademy/familycertification/repository/ResidentRepository.java,9/2/92bccc57c19ad0a0431edac8d81a2a6dffee88b5
-}
-Msrc/main/java/com/nhnacademy/familycertification/service/ResidentService.java,3/6/3683acb09196e53ecffa7a8c693cde7c8d19afd7
 ‹
 [src/main/java/com/nhnacademy/familycertification/controller/restapi/ResidentController.java,9/d/9d6507deddc949febbbe1153014e80ce463de2a4
 v
 Fsrc/main/java/com/nhnacademy/familycertification/config/WebConfig.java,1/5/15ff02171cd2701ed5d138fad62a867616d9b871
-v
-Fsrc/main/java/com/nhnacademy/familycertification/config/JpaConfig.java,8/0/80cf0d2b1ae0e2d2a7912bf503d8221d5fc46ecf
 ~
 Nsrc/main/java/com/nhnacademy/familycertification/config/WebAppInitializer.java,5/2/52ee726185fdb04dc46f3fc0d5e774692285be27
 w
 Gsrc/main/java/com/nhnacademy/familycertification/config/RootConfig.java,8/9/89b05e0fa7b1cefdfc79940780059f1b6fc5ea83
-…
-Usrc/main/java/com/nhnacademy/familycertification/service/CertificateIssueService.java,4/a/4a91b3be184cad7e58fd8d04b59969ce173fba0b
-z
-Jsrc/main/java/com/nhnacademy/familycertification/service/DeathService.java,2/d/2d2af797fd43afba170160024b7d8c9995cabd46
 =
 resident.http,9/d/9d9b202ac41aa666fb708c2ad5c9c5b024143dfe
 „

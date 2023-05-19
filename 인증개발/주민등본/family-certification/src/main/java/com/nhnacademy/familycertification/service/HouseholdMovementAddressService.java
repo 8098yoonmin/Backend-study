@@ -48,7 +48,6 @@ public class HouseholdMovementAddressService {
         HouseholdMovementAddress householdMovementAddress = repository.findByPk_HouseMovementReportDateAndPk_HouseholdSerialNumber(date1,number).orElseThrow(NotFoundResidentException::new);
 
         householdMovementAddress.setHouseMovementAddress(DTO.getHouseMovementAddress());
-        repository.save(householdMovementAddress);
         return DTO;
     }
     public void deleteMovement(Long number,String date){
