@@ -1,6 +1,7 @@
 package com.nhnacademy.familycertification.controller.restapi;
 
 import com.nhnacademy.familycertification.domain.HouseholdDTO;
+import com.nhnacademy.familycertification.domain.HouseholdMovementAddressDTO;
 import com.nhnacademy.familycertification.service.HouseholdService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -4,13 +4,16 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @ToString
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
+@Setter
 @Entity
 @Table(name = "household_movement_address")
 public class HouseholdMovementAddress {
@@ -41,7 +44,7 @@ public class HouseholdMovementAddress {
         private Long householdSerialNumber;
 
         @Column(name = "house_movement_report_date")
-        private LocalDateTime houseMovementReportDate;
+        private LocalDate houseMovementReportDate;
     }
 
 }

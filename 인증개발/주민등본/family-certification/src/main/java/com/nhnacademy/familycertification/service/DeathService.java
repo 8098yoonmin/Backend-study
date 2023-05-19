@@ -39,7 +39,7 @@ public class DeathService {
                 .phoneNumber(deathReportDTO.getPhoneNumber())
                 .build();
 
-        deathReportRepository.saveAndFlush(deathResident);
+        deathReportRepository.save(deathResident);
         return deathReportDTO;
     }
 
@@ -52,7 +52,7 @@ public class DeathService {
         }
 
         deathReport.updateReportInfo(deathModifyDTO.getEmailAddress(), deathModifyDTO.getPhoneNumber());
-        deathReportRepository.saveAndFlush(deathReport);
+        deathReportRepository.save(deathReport);
         return deathModifyDTO;
     }
 

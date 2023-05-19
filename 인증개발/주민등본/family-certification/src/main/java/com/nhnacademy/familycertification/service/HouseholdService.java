@@ -1,7 +1,9 @@
 package com.nhnacademy.familycertification.service;
 
 import com.nhnacademy.familycertification.domain.HouseholdDTO;
+import com.nhnacademy.familycertification.domain.HouseholdMovementAddressDTO;
 import com.nhnacademy.familycertification.entity.Household;
+import com.nhnacademy.familycertification.entity.HouseholdMovementAddress;
 import com.nhnacademy.familycertification.entity.Resident;
 import com.nhnacademy.familycertification.exception.NotExistCertificateException;
 import com.nhnacademy.familycertification.exception.NotFoundResidentException;
@@ -38,12 +40,6 @@ public class HouseholdService {
     }
 
     public void deleteHousehold(Long householdSerialNumber) {
-
-//        Resident householdResident = residentRepository.findById((householdSerialNumber)).orElseThrow(NotFoundResidentException::new);
-//
-//        if(Objects.isNull(householdResident)){
-//            throw new NotFoundResidentException();
-//        }
 
         householdRepository.deleteById(householdSerialNumber);
 

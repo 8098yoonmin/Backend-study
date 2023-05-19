@@ -2,13 +2,15 @@ package com.nhnacademy.familycertification.domain;
 
 import lombok.Getter;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Getter
 public class HouseholdMovementAddressDTO {
 
-    private Long householdSerialNumber;
-    private LocalDateTime houseMovementReportDate;
+    private LocalDate houseMovementReportDate;
     private String houseMovementAddress;
+    private char lastAddressYn;
 
 }
