@@ -1,8 +1,6 @@
 
 Œ
 \src/main/java/com/nhnacademy/familycertification/exception/NotExistCertificateException.java,e/3/e30316f136ccaf50cb370906760e1f09f8bdac87
-y
-Isrc/main/java/com/nhnacademy/familycertification/advice/CommonAdvice.java,8/b/8b9b0c287d59f6421fbec9eb9f206eea5d93c91e
 t
 Dsrc/main/java/com/nhnacademy/familycertification/domain/PageDTO.java,c/0/c03d6e659179546d0dd62db8c40a01bb13058093
 ‰
@@ -44,8 +42,6 @@ y
 Isrc/main/java/com/nhnacademy/familycertification/domain/HouseholdDTO.java,4/2/423854bf7ca4814c11e6b879f48e1e1ddc8f83b0
 “
 csrc/main/java/com/nhnacademy/familycertification/repository/BirthDeathReportResidentRepository.java,5/d/5d8f38457b7bae0d5aafd7c5788005c10834137f
-‹
-[src/main/java/com/nhnacademy/familycertification/controller/restapi/ResidentController.java,9/d/9d6507deddc949febbbe1153014e80ce463de2a4
 „
 Tsrc/main/java/com/nhnacademy/familycertification/repository/HouseholdRepository.java,4/6/463f425ff8c8c68fc050fe39ef3945417f02ce2c
 •

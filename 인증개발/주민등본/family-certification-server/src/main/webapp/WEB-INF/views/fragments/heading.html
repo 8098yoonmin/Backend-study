@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<div sec:authorize="hasAuthority('Resident')">
+<div sec:authorize="isAuthenticated()">
   <span sec:authentication="principal.username"/>,&nbsp;
   <a href="/auth/logout">Logout</a>
 </div>
-<div sec:authorize="!hasAuthority('Resident')">
-  <a href="/auth/login">Login</a></br>
+<div sec:authorize="!isAuthenticated()">
+  <a href="/redirect-index">Login</a>
 </div>
 <br />
 <a href="/">Go to Main</a>

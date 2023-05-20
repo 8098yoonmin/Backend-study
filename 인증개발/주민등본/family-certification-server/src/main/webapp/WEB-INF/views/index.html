@@ -8,12 +8,19 @@
 </head>
 <body>
 <h1>Main</h1>
-
-<th:block th:include="fragments/heading" />
-
-<ul>
-  <li sec:authorize-url="/family/1">
-    <a href="/family/1">가족관계증명서</a>
+  <th:block th:include="fragments/heading" />
+<ul  sec:authorize="hasAuthority('Resident')">
+  <li>
+    <a href="/family">가족관계증명서</a>
+  </li>
+  <li>
+    <a href="/registration">주민등록등본</a>
+  </li>
+  <li>
+    <a href="/birth">출생신고서</a>
+  </li>
+  <li>
+    <a href="/death">사망신고서</a>
   </li>
 </ul>
 

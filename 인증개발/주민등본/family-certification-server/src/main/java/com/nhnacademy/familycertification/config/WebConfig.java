@@ -16,6 +16,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.*;
+import org.thymeleaf.extras.springsecurity5.dialect.SpringSecurityDialect;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
@@ -43,11 +44,8 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
 
     @Override
     public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-        // 기본으로 등록되는 MappingJackson2HttpMessageConverter 제거함
         converters.removeIf(o->o instanceof MappingJackson2HttpMessageConverter);
-        // bean으로 등록해놓은 objectMapper를 주입하여MappingJackson2HttpMessageConverter 생성
         HttpMessageConverter converter =  new MappingJackson2HttpMessageConverter(objectMapper);
-        //추가
         converters.add(converter);
     }
     @Override
@@ -60,50 +58,39 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
         this.messageSource = messageSource;
     }
 
-    @Bean
-    public ThymeleafViewResolver thymeleafViewResolver(){
-        ThymeleafViewResolver thymeleafViewResolver = new ThymeleafViewResolver();
-        thymeleafViewResolver.setTemplateEngine(springTemplateEngine());
-        thymeleafViewResolver.setCharacterEncoding("UTF-8");
-        thymeleafViewResolver.setOrder(1);
-        thymeleafViewResolver.setViewNames(new String[]{"*"});
-        return thymeleafViewResolver;
-    }
-    public SpringTemplateEngine springTemplateEngine(){
-        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        templateEngine.setTemplateResolver(springResourceTemplateResolver());
-        templateEngine.setTemplateEngineMessageSource(messageSource);
-        return templateEngine;
-    }
-    public SpringResourceTemplateResolver springResourceTemplateResolver(){
-        SpringResourceTemplateResolver springResourceTemplateResolver = new SpringResourceTemplateResolver();
-        springResourceTemplateResolver.setApplicationContext(applicationContext);
-        springResourceTemplateResolver.setCharacterEncoding("UTF-8");
-        springResourceTemplateResolver.setPrefix("/WEB-INF/views/");
-        springResourceTemplateResolver.setSuffix(".html");
-        springResourceTemplateResolver.setCacheable(false);
-        springResourceTemplateResolver.setTemplateMode(TemplateMode.HTML);
-        return springResourceTemplateResolver;
-    }
-
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
-        // registry.jsp("/WEB-INF/views/",".jsp");
         registry.viewResolver(thymeleafViewResolver());
     }
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+    @Bean
+    public ThymeleafViewResolver thymeleafViewResolver() {
+        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+        viewResolver.setTemplateEngine(templateEngine());
+        viewResolver.setCharacterEncoding("UTF-8");
+        viewResolver.setOrder(1);
+        viewResolver.setViewNames(new String[] { "*" });
+
+        return viewResolver;
+    }
+    public SpringTemplateEngine templateEngine() {
+        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+        templateEngine.setTemplateResolver(templateResolver());
+        templateEngine.setTemplateEngineMessageSource(messageSource);
+        templateEngine.addDialect(new SpringSecurityDialect());
+
+        return templateEngine;
     }
 
-    @Override
-    public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        configurer.favorParameter(true)
-                .parameterName("format")
-                .ignoreAcceptHeader(true)
-                .defaultContentType(MediaType.APPLICATION_JSON)
-                .mediaType("json", MediaType.APPLICATION_JSON)
-                .mediaType("xml", MediaType.APPLICATION_XML);
+    public SpringResourceTemplateResolver templateResolver() {
+        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+        templateResolver.setApplicationContext(applicationContext);
+        templateResolver.setCharacterEncoding("UTF-8");
+        templateResolver.setPrefix("/WEB-INF/views/");
+        templateResolver.setSuffix(".html");
+        templateResolver.setTemplateMode("HTML5");
+
+        return templateResolver;
     }
+
 }
