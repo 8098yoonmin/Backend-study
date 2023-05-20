@@ -1,0 +1,7 @@
+
+W
+java:S2209"5Change this instance-reference to a static reference.(Ϋ»όÿÿÿÿ8λ¶’™ƒ1
+„
+java:S1128"bRemove this unused import 'com.nhnacademy.familycertification.domain.FamilyRelationshipReportDTO'.(™‚λωÿÿÿÿ8ν¶’™ƒ1
+c
+java:S1128"ARemove this unused import 'org.springframework.data.domain.Page'.(βόÿÿÿÿ8ν¶’™ƒ1

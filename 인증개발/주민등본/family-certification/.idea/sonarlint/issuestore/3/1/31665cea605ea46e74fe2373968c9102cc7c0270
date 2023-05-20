@@ -1,0 +1,11 @@
+
+R
+java:S2209"5Change this instance-reference to a static reference.(…€ˆ8¥¥˜ƒ1
+
+java:S1128"bRemove this unused import 'com.nhnacademy.familycertification.domain.HouseholdMovementAddressDTO'.(ÚÊË²8¥¥˜ƒ1
+
+java:S1128"_Remove this unused import 'com.nhnacademy.familycertification.entity.HouseholdMovementAddress'.(»÷Şóùÿÿÿÿ8¥¥˜ƒ1
+ˆ
+java:S1128"fRemove this unused import 'com.nhnacademy.familycertification.exception.NotExistCertificateException'.(È‡ üÿÿÿÿ8¥¥˜ƒ1
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8¥¥˜ƒ1
