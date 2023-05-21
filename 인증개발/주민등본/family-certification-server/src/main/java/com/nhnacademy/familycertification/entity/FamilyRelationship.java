@@ -18,9 +18,14 @@ public class FamilyRelationship {
     private Pk pk;
 
     @MapsId("baseResidentSerialNumber")
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "base_resident_serial_number")
     private Resident resident;
+
+    @MapsId("familyResidentSerialNumber")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="family_resident_serial_number")f
+    private Resident familyResident;
 
     @Setter
     @Column(name = "family_relationship_code")

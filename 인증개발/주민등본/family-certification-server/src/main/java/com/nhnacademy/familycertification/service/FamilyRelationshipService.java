@@ -14,6 +14,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Objects;
 
 @Service
@@ -27,10 +28,13 @@ public class FamilyRelationshipService {
     public FamilyRelationshipDTO registerFamilyRelationship(Long serialNumber,FamilyRelationshipDTO familyRelationshipDTO) {
 
         Resident resident = residentRepository.findById(serialNumber).orElseThrow(NotFoundResidentException::new);
+        Resident familyResident = residentRepository.findById(familyRelationshipDTO.getFamilySerialNumber()).orElseThrow(NotFoundResidentException::new);
+
 
         FamilyRelationship familyRelationship = new FamilyRelationship().builder()
                 .pk(new FamilyRelationship.Pk(serialNumber,familyRelationshipDTO.getFamilySerialNumber()))
                 .resident(resident)
+                .familyResident(familyResident)
                 .familyRelationshipCode(familyRelationshipDTO.getFamilyRelationshipCode())
                 .build();
         familyRelationshipRepository.saveAndFlush(familyRelationship);
@@ -57,6 +61,11 @@ public class FamilyRelationshipService {
         }
 
         familyRelationshipRepository.delete(relationship);
+    }
+
+    public List<FamilyRelationship> getFamily(Long serialNumber){
+        List<FamilyRelationship> familyRelationshipList = familyRelationshipRepository.findByPk_BaseResidentSerialNumber(serialNumber);
+        return familyRelationshipList;
     }
 
 }

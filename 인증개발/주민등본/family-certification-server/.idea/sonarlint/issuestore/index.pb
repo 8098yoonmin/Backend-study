@@ -40,8 +40,6 @@ Xsrc/main/java/com/nhnacademy/familycertification/controller/restapi/DeathContro
 death.http,3/9/392ff039bd845c452648bf77704bfa6343d234a8
 y
 Isrc/main/java/com/nhnacademy/familycertification/domain/HouseholdDTO.java,4/2/423854bf7ca4814c11e6b879f48e1e1ddc8f83b0
-“
-csrc/main/java/com/nhnacademy/familycertification/repository/BirthDeathReportResidentRepository.java,5/d/5d8f38457b7bae0d5aafd7c5788005c10834137f
 „
 Tsrc/main/java/com/nhnacademy/familycertification/repository/HouseholdRepository.java,4/6/463f425ff8c8c68fc050fe39ef3945417f02ce2c
 •

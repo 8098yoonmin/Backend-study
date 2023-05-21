@@ -63,7 +63,7 @@ public class ResidentService {
     }
 
 
-//    public Resident findByResidentId(String residentId) {
-//        return residentRepository.findByResidentId(residentId).orElseThrow(NotFoundResidentException::new);
-//    }
+    public Resident findByResidentId(String residentId) {
+        return residentRepository.findByLoginId(residentId).orElseThrow(NotFoundResidentException::new);
+    }
 }

@@ -16,4 +16,6 @@ public interface FamilyRelationshipRepository extends JpaRepository<FamilyRelati
 
 
     FamilyRelationship deleteByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber(Long familyResidentSerialNumber, Long baseSerialNumber);
+
+    List<FamilyRelationship> findByPk_BaseResidentSerialNumber(Long serialNumber);
 }

@@ -19,6 +19,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.authorizeHttpRequests()
                 .requestMatchers("/redirect-index").authenticated()
+                .requestMatchers("/family/**").hasAuthority("Resident")
                 .anyRequest().permitAll()
                 .and()
 //                .requiresChannel()

@@ -66,4 +66,9 @@ public class BirthService {
         birthReportRepository.delete(birthReport);
     }
 
+    public BirthDeathReportResident findBirth(Long serialNumber){
+        BirthDeathReportResident birthDeathReportResident = birthReportRepository.findByPk_ResidentSerialNumberAndPk_BirthDeathTypeCode(serialNumber, BIRTH_TYPE);
+        return birthDeathReportResident;
+    }
+
 }
