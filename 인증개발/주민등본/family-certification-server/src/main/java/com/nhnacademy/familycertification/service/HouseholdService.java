@@ -45,6 +45,11 @@ public class HouseholdService {
 
     }
 
+    public Household findByResidentId(Long householdSerialNumber){
+        Household household = householdRepository.findByResidentSerialNumber(householdSerialNumber);
+        return household;
+    }
+
 
 
 

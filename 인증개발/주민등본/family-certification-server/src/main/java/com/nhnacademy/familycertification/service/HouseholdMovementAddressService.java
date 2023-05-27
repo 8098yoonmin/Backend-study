@@ -57,4 +57,5 @@ public class HouseholdMovementAddressService {
         HouseholdMovementAddress householdMovementAddress = repository.findByPk_HouseMovementReportDateAndPk_HouseholdSerialNumber(date1,number).orElseThrow(NotFoundResidentException::new);
         repository.delete(householdMovementAddress);
     }
+
 }

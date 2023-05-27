@@ -24,7 +24,7 @@ public class FamilyRelationship {
 
     @MapsId("familyResidentSerialNumber")
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="family_resident_serial_number")f
+    @JoinColumn(name="family_resident_serial_number")
     private Resident familyResident;
 
     @Setter

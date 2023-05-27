@@ -1,0 +1,9 @@
+
+‰
+java:S1488C"nImmediately return this expression instead of assigning it to the temporary variable "familyRelationshipList".(¦Ί²όÿÿÿÿ
+P
+java:S2209""5Change this instance-reference to a static reference.(Ϋ»όÿÿÿÿ
+„
+java:S1128"bRemove this unused import 'com.nhnacademy.familycertification.domain.FamilyRelationshipReportDTO'.(™‚λωÿÿÿÿ8Ά¬Άθƒ1
+c
+java:S1128"ARemove this unused import 'org.springframework.data.domain.Page'.(βόÿÿÿÿ8Ά¬Άθƒ1
