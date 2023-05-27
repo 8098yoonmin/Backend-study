@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>주민등록등본</h1>
+
+발급일 <span th:text="${certificateInfo.certificateIssueDate}"></span>
+증명서확인번호 <span th:text="${certificateInfo.certificateConfirmationNumber}"></span>
+
+<br>
+
+세대주 성명 : <span th:text="${household.householdResidentSerialNumber.name}"></span>
+세대구성 사유 : <span th:text="${household.householdCompositionReasonCode}"></span>
+세대구성 일자 : <span th:text="${household.householdCompositionDate}"></span>
+
+<br>
+<br>
+
+<table border="1" style="border-collapse: collapse; width: 1400px">
+  <thead>
+  <tr>
+    <td>상태</td>
+    <td>주소</td>
+    <td>신고일</td>
+  </tr>
+  </thead>
+
+  <tbody>
+  <th:block th:each="householdMovementAddress : ${householdMovementAddressList}">
+    <tr>
+      <td th:text="${householdMovementAddress.lastAddressYn} == 'Y' ? '현주소' : '전주소'"></td>
+      <td th:text="${householdMovementAddress.houseMovementAddress}"></td>
+      <td th:text="${householdMovementAddress.pk.houseMovementReportDate}"></td>
+    </tr>
+  </th:block>
+  </tbody>
+</table>
+
+<br>
+
+<table border="1" style="border-collapse: collapse; width: 1400px">
+  <thead>
+  <tr>
+    <td>세대주 관계</td>
+    <td>성명</td>
+    <td>주민등록번호</td>
+    <td>신고일</td>
+    <td>변동사유</td>
+  </tr>
+  </thead>
+
+  <tbody>
+  <th:block th:each="householdComposition : ${householdCompositionList}">
+    <tr>
+      <td th:text="${householdComposition.householdRelationshipCode}"></td>
+      <td th:text="${householdComposition.resident.name}"></td>
+      <td th:text="${householdComposition.resident.residentRegistrationNumber}"></td>
+      <td th:text="${householdComposition.reportDate}"></td>
+      <td th:text="${householdComposition.householdCompositionChangeReasonCode}"></td>
+    </tr>
+  </th:block>
+  </tbody>
+</table>
+
+<p th:text="${householdComposition}"></p>
+
+
+
+</body>
+</html>

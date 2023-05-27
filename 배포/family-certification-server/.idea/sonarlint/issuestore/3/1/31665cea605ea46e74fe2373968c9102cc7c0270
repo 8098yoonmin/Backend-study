@@ -1,0 +1,13 @@
+
+~
+java:S14881"aImmediately return this expression instead of assigning it to the temporary variable "household".(“Ş®8ôÔ¯éƒ1
+K
+java:S2209"5Change this instance-reference to a static reference.(…€ˆ
+x
+java:S1128"bRemove this unused import 'com.nhnacademy.familycertification.domain.HouseholdMovementAddressDTO'.(ÚÊË²
+z
+java:S1128"_Remove this unused import 'com.nhnacademy.familycertification.entity.HouseholdMovementAddress'.(»÷Şóùÿÿÿÿ
+
+java:S1128"fRemove this unused import 'com.nhnacademy.familycertification.exception.NotExistCertificateException'.(È‡ üÿÿÿÿ
+D
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›
