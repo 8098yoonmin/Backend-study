@@ -99,11 +99,11 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
     }
 
     //view 연결하기
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("main");
-        registry.addRedirectViewController("/redirect-index", "/login");
-    }
+//    @Override
+//    public void addViewControllers(ViewControllerRegistry registry) {
+//        registry.addViewController("/").setViewName("main");
+//        registry.addRedirectViewController("/redirect-index", "/login");
+//    }
 
 
     //xml일지 json일지 정햇
