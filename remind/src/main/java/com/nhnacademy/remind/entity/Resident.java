@@ -23,6 +23,8 @@ public class Resident {
     private String name;
     @Column(name = "resident_id")
     private String residentId;
+
+    @Column(name="resident_pwd")
     private String password;
     @Column(name = "resident_registration_number")
     private String residentRegistrationNumber;
