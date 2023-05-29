@@ -1,7 +1,9 @@
 package com.nhnacademy.remind.service;
 
+import com.nhnacademy.remind.domain.ResidentModifyDTO;
 import com.nhnacademy.remind.domain.ResidentRegisterDTO;
 import com.nhnacademy.remind.entity.Resident;
+import com.nhnacademy.remind.exception.NotFoundResidentException;
 import com.nhnacademy.remind.repository.ResidentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,6 +32,13 @@ public class ResidentService {
                 .build();
         residentRepository.saveAndFlush(resident);
         return residentRegisterDTO;
+    }
+
+    public ResidentModifyDTO modify(Long serialNum, ResidentModifyDTO residentModifyDTO) {
+        Resident resident = residentRepository.findById(serialNum).orElseThrow(NotFoundResidentException::new);
+        resident.modifyResidentInfo(residentModifyDTO.getName(), residentModifyDTO.getRegistrationBaseAddress());
+        residentRepository.save(resident);
+        return residentModifyDTO;
     }
 
 }

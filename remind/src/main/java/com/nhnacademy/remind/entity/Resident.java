@@ -43,4 +43,14 @@ public class Resident {
     private String deathPlaceCode;
     @Column(name = "death_place_address")
     private String deathPlaceAddress;
+
+    public void modifyResidentInfo(String name, String registerationBaseAddress){
+        if(name!= null) {
+            this.name= name;
+        }
+
+        if(registerationBaseAddress != null){
+            this.registrationBaseAddress = registerationBaseAddress;
+        }
+    }
 }
