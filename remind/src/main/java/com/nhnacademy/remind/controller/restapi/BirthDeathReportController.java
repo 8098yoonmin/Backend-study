@@ -30,4 +30,8 @@ public class BirthDeathReportController {
         return ResponseEntity.ok(response);
     }
 
+    @DeleteMapping("/{serialNumber}/birth/{targetSerialNumber}")
+    public void deleteBirth(@PathVariable(name = "serialNumber")Long number, @PathVariable(name = "targetSerialNumber")Long targetNumber){
+        service.deleteBirth(number,targetNumber);
+    }
 }

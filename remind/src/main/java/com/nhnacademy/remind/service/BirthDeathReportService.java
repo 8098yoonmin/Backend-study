@@ -46,6 +46,10 @@ public class BirthDeathReportService {
         return birthReportDTO;
     }
 
+    public void deleteBirth(Long number,Long targetNumber){
+        BirthDeathReportResident birthReport = birthDeathReportRepository.getBirthDeathReportResident(number,targetNumber).orElseThrow(NotFoundResidentException::new);
+        birthDeathReportRepository.delete(birthReport);
+    }
 
 
 }
