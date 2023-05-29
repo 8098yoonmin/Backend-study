@@ -43,6 +43,13 @@ public class FamilyRelationshipService {
         return familyRelationshipDTO;
     }
 
+    public void deleteFamilyRelationship(Long baseNumber, Long targetNumber) {
+        FamilyRelationship familyRelationship = familyRelationshipRepository.findByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber(
+                targetNumber,baseNumber).orElseThrow(NotFoundResidentException::new);
+
+        familyRelationshipRepository.delete(familyRelationship);
+    }
+
 
 
     }
