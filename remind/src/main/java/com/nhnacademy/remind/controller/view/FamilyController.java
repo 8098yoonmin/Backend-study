@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 @RequiredArgsConstructor
@@ -35,6 +36,13 @@ public class FamilyController {
         model.addAttribute("death",birthDeathReportResidentService.findDeath(serialNumber));
         return "index";
     }
+
+//    @GetMapping("/family/{serialNumber}")
+//    public String getFamilyRelationship(@PathVariable(name="serialNumber")Long serialNumber, Model model) {
+//
+//    }
+//
+
 
 
 
