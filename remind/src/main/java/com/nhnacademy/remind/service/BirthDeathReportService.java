@@ -3,6 +3,7 @@ package com.nhnacademy.remind.service;
 import com.nhnacademy.remind.domain.birthdeath.BirthReportDTO;
 import com.nhnacademy.remind.domain.birthdeath.BirthReportUpdateDTO;
 import com.nhnacademy.remind.domain.birthdeath.DeathReportDTO;
+import com.nhnacademy.remind.domain.birthdeath.DeathReportUpdateDTO;
 import com.nhnacademy.remind.entity.BirthDeathReportResident;
 import com.nhnacademy.remind.entity.Resident;
 import com.nhnacademy.remind.repository.BirthDeathReportRepository;
@@ -66,5 +67,16 @@ public class BirthDeathReportService {
                 .build();
         birthDeathReportRepository.save(birthReport);
         return deathReportDTO;
+    }
+    public DeathReportUpdateDTO updateDeath(Long serialNumber, Long targetNumber, DeathReportUpdateDTO deathReportUpdateDTO){
+
+        BirthDeathReportResident birthReport = birthDeathReportRepository.getBirthDeathReportResident(serialNumber,targetNumber)
+                .orElseThrow(NotFoundResidentException::new);
+        birthReport.setBirthDeathReportDate(deathReportUpdateDTO.getBirthDeathReportDate());
+        birthReport.setPhoneNumber(deathReportUpdateDTO.getPhoneNumber());
+        birthReport.setEmailAddress(deathReportUpdateDTO.getEmailAddress());
+
+        birthDeathReportRepository.save(birthReport);
+        return deathReportUpdateDTO;
     }
 }
