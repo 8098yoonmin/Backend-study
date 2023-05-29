@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ###
-PUT /household/4/movement/20091002 HTTP/1.1
+PUT /household/2/movement/20091002 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
@@ -18,5 +18,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE /household/4/movement/20091002 HTTP/1.1
+DELETE /household/2/movement/20091002 HTTP/1.1
 Host: localhost:8080

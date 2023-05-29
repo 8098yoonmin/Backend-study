@@ -36,5 +36,7 @@ public class HouseholdService {
         Household household = householdRepository.findTopByHouseholdResidentSerialNumber_ResidentSerialNumber(serialNumber);
         householdRepository.delete(household);
     }
+
+
 }
 

@@ -1,13 +1,11 @@
 package com.nhnacademy.remind.controller.restapi;
 
 import com.nhnacademy.remind.domain.HouseholdMovementAddressDTO;
+import com.nhnacademy.remind.domain.HouseholdMovementAddressUpdateDTO;
 import com.nhnacademy.remind.service.HouseholdMovementService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,5 +20,19 @@ public class HouseholdMovementController {
 
         return ResponseEntity.ok(res);
     }
+    @PutMapping("/household/{householdSerialNumber}/movement/{reportDate}")
+    public ResponseEntity<HouseholdMovementAddressUpdateDTO> updateHouseholdComposition(
+            @PathVariable(name = "reportDate") String date,
+            @PathVariable(name = "householdSerialNumber") Long number,
+            @RequestBody HouseholdMovementAddressUpdateDTO DTO){
+        HouseholdMovementAddressUpdateDTO res = householdService.updateMovement(DTO,date,number);
 
+        return ResponseEntity.ok(res);
+    }
+    @DeleteMapping("/household/{householdSerialNumber}/movement/{reportDate}")
+    public void deleteHouseholdComposition(
+            @PathVariable(name = "reportDate") String date,
+            @PathVariable(name = "householdSerialNumber")Long serialNumber){
+        householdService.deleteMovement(serialNumber,date);
+    }
 }
