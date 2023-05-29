@@ -79,4 +79,9 @@ public class BirthDeathReportService {
         birthDeathReportRepository.save(birthReport);
         return deathReportUpdateDTO;
     }
+
+    public void deleteDeath(Long number,Long targetNumber){
+        BirthDeathReportResident deathReport = birthDeathReportRepository.getBirthDeathReportResident(number,targetNumber).orElseThrow(NotFoundResidentException::new);
+        birthDeathReportRepository.delete(deathReport);
+    }
 }

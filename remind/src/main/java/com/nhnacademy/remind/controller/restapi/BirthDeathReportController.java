@@ -52,4 +52,9 @@ public class BirthDeathReportController {
         return ResponseEntity.ok(response);
     }
 
+    @DeleteMapping("/{serialNumber}/death/{targetSerialNumber}")
+    public void deleteDeath(@PathVariable(name = "serialNumber")Long number, @PathVariable(name = "targetSerialNumber")Long targetNumber){
+        service.deleteDeath(number,targetNumber);
+    }
+
 }
