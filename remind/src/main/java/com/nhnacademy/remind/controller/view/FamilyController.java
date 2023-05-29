@@ -1,6 +1,7 @@
 package com.nhnacademy.remind.controller.view;
 
 import com.nhnacademy.remind.domain.certificate.CertificateIssueDTO;
+import com.nhnacademy.remind.entity.BirthDeathReportResident;
 import com.nhnacademy.remind.entity.Resident;
 import com.nhnacademy.remind.service.BirthDeathReportService;
 import com.nhnacademy.remind.service.CertificateIssueService;
@@ -14,6 +15,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.PathVariable;
+
+import java.time.format.DateTimeFormatter;
 
 @Controller
 @RequiredArgsConstructor
@@ -51,6 +54,18 @@ public class FamilyController {
         model.addAttribute("resident", residentService.findBySerialId(serialNumber));
         model.addAttribute("familyList", familyRelationshipService.getFamilyRelationship(serialNumber));
         return "familyRelationship";
+    }
+
+    @GetMapping("/birth/{serialNumber}")
+    public String birth(@PathVariable(name="serialNumber")Long serialNumber, Model model) {
+        BirthDeathReportResident report = birthDeathReportResidentService.findBirth(serialNumber);
+        Resident resident = residentService.findBySerialId(serialNumber);
+        model.addAttribute("report", report);
+        model.addAttribute("date", resident.getBirthDate().format(DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 HH시 mm분")));
+        model.addAttribute("resident", residentService.findBySerialId(serialNumber));
+        model.addAttribute("father", familyRelationshipService.getFather(serialNumber));
+        model.addAttribute("mother", familyRelationshipService.getMother(serialNumber));
+        return "birth";
     }
 
 

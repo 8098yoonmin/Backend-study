@@ -12,4 +12,7 @@ public interface FamilyRelationshipRepository extends JpaRepository<FamilyRelati
     Optional<FamilyRelationship> findByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber (Long targetNumber, Long baseNumber);
 
     Optional<List<FamilyRelationship>> findByPk_BaseResidentSerialNumber(Long serialNumber);
+
+    Optional<FamilyRelationship> findByPk_BaseResidentSerialNumberAndFamilyRelationshipCode(Long id,String code);
+
 }

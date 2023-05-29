@@ -55,6 +55,11 @@ public class FamilyRelationshipService {
         return familyRelationshipRepository.findByPk_BaseResidentSerialNumber(number).orElseThrow(NotFoundResidentException::new);
     }
 
-
+    public FamilyRelationship getFather(Long number){
+        return familyRelationshipRepository.findByPk_BaseResidentSerialNumberAndFamilyRelationshipCode(number,"부").orElseThrow(NotFoundResidentException::new);
+    }
+    public FamilyRelationship getMother(Long number){
+        return familyRelationshipRepository.findByPk_BaseResidentSerialNumberAndFamilyRelationshipCode(number,"모").orElseThrow(NotFoundResidentException::new);
+    }
 
     }
