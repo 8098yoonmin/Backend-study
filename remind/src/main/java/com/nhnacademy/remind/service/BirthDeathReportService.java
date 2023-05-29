@@ -2,6 +2,7 @@ package com.nhnacademy.remind.service;
 
 import com.nhnacademy.remind.domain.birthdeath.BirthReportDTO;
 import com.nhnacademy.remind.domain.birthdeath.BirthReportUpdateDTO;
+import com.nhnacademy.remind.domain.birthdeath.DeathReportDTO;
 import com.nhnacademy.remind.entity.BirthDeathReportResident;
 import com.nhnacademy.remind.entity.Resident;
 import com.nhnacademy.remind.repository.BirthDeathReportRepository;
@@ -51,5 +52,19 @@ public class BirthDeathReportService {
         birthDeathReportRepository.delete(birthReport);
     }
 
-
+    public DeathReportDTO registerDeath(Long serialNumber, DeathReportDTO deathReportDTO){
+        Resident targetResident = residentRepository.findById(deathReportDTO.getResident()).orElseThrow(NotFoundResidentException::new);
+        Resident reporter = residentRepository.findById(serialNumber).orElseThrow(NotFoundResidentException::new);
+        BirthDeathReportResident birthReport = BirthDeathReportResident.builder()
+                .pk(new BirthDeathReportResident.Pk(deathReportDTO.getResident(),serialNumber,deathReportDTO.getBirthDeathTypeCode()))
+                .birthDeathReportDate(deathReportDTO.getBirthDeathReportDate())
+                .resident(targetResident)
+                .reportResidentSerialNumber(reporter)
+                .birthReportQualificationsCode(deathReportDTO.getDeathReportQualificationsCode())
+                .emailAddress(deathReportDTO.getEmailAddress())
+                .phoneNumber(deathReportDTO.getPhoneNumber())
+                .build();
+        birthDeathReportRepository.save(birthReport);
+        return deathReportDTO;
+    }
 }
