@@ -6,6 +6,7 @@ import com.nhnacademy.remind.entity.Resident;
 import com.nhnacademy.remind.exception.NotFoundResidentException;
 import com.nhnacademy.remind.repository.ResidentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,13 +16,15 @@ import org.springframework.transaction.annotation.Transactional;
 public class ResidentService {
 
     private final ResidentRepository residentRepository;
+    private final PasswordEncoder passwordEncoder;
+
 
     public ResidentRegisterDTO register(ResidentRegisterDTO residentRegisterDTO) {
         Resident resident = new Resident().builder()
                 .name(residentRegisterDTO.getName())
                 .residentRegistrationNumber(residentRegisterDTO.getResidentRegistrationNumber())
                 .residentId(residentRegisterDTO.getResidentId())
-                .password(residentRegisterDTO.getPassword())
+                .password(passwordEncoder.encode(residentRegisterDTO.getPassword()))
                 .birthDate(residentRegisterDTO.getBirthDate())
                 .birthPlaceCode(residentRegisterDTO.getBirthPlaceCode())
                 .registrationBaseAddress(residentRegisterDTO.getRegistrationBaseAddress())

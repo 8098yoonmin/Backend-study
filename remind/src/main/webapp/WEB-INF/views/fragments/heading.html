@@ -3,10 +3,10 @@
 
 <div sec:authorize="isAuthenticated()">
   <span sec:authentication="principal.username"/>,&nbsp;
-  <a href="/auth/logout">Logout</a>
+  <a href="/logout">Logout</a>
 </div>
 <div sec:authorize="!isAuthenticated()">
-  <a href="/redirect-index">Login</a>
+  <a href="/userLogin">Login</a>
 </div>
 <br />
 <a href="/">Go to Main</a>
