@@ -41,4 +41,6 @@ public class ResidentService {
         return residentModifyDTO;
     }
 
+
+
 }

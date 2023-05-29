@@ -1,6 +1,7 @@
 package com.nhnacademy.remind.service;
 
 import com.nhnacademy.remind.domain.birthdeath.BirthReportDTO;
+import com.nhnacademy.remind.domain.birthdeath.BirthReportUpdateDTO;
 import com.nhnacademy.remind.entity.BirthDeathReportResident;
 import com.nhnacademy.remind.entity.Resident;
 import com.nhnacademy.remind.repository.BirthDeathReportRepository;
@@ -32,6 +33,19 @@ public class BirthDeathReportService {
         birthDeathReportRepository.save(birthReport);
         return birthReportDTO;
     }
+
+    public BirthReportUpdateDTO updateBirth(Long serialNumber, Long targetNumber, BirthReportUpdateDTO birthReportDTO){
+
+        BirthDeathReportResident birthReport = birthDeathReportRepository.getBirthDeathReportResident(serialNumber,targetNumber)
+                .orElseThrow(NotFoundResidentException::new);
+        birthReport.setBirthDeathReportDate(birthReportDTO.getBirthDeathReportDate());
+        birthReport.setPhoneNumber(birthReportDTO.getPhoneNumber());
+        birthReport.setEmailAddress(birthReportDTO.getEmailAddress());
+
+        birthDeathReportRepository.save(birthReport);
+        return birthReportDTO;
+    }
+
 
 
 }
