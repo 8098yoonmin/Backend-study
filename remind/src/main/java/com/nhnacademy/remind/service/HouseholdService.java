@@ -33,7 +33,7 @@ public class HouseholdService {
     }
 
     public void deleteHousehold(Long serialNumber){
-        Household household = householdRepository.findByHouseholdResidentSerialNumber_ResidentSerialNumber(serialNumber);
+        Household household = householdRepository.findTopByHouseholdResidentSerialNumber_ResidentSerialNumber(serialNumber);
         householdRepository.delete(household);
     }
 }
