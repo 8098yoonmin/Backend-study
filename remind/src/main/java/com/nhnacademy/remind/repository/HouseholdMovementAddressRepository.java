@@ -9,4 +9,6 @@ import java.util.Optional;
 
 public interface HouseholdMovementAddressRepository extends JpaRepository<HouseholdMovementAddress,HouseholdMovementAddress.Pk> {
     Optional<HouseholdMovementAddress> findByPk_HouseMovementReportDateAndPk_HouseholdSerialNumber(LocalDate date, Long number);
+    Optional<List<HouseholdMovementAddress>> findByPk_householdSerialNumber(Long number);
+
 }

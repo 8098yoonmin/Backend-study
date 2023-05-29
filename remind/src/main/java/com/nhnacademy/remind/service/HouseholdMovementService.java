@@ -14,6 +14,7 @@ import com.nhnacademy.remind.exception.NotFoundResidentException;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Service
 @Transactional
@@ -37,7 +38,6 @@ public class HouseholdMovementService {
     }
 
 
-
     public HouseholdMovementAddressUpdateDTO updateMovement(HouseholdMovementAddressUpdateDTO DTO, String date, Long number){
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd");
@@ -55,5 +55,10 @@ public class HouseholdMovementService {
 
         HouseholdMovementAddress householdMovementAddress = repository.findByPk_HouseMovementReportDateAndPk_HouseholdSerialNumber(date1,number).orElseThrow(NotFoundResidentException::new);
         repository.delete(householdMovementAddress);
+    }
+
+    public List<HouseholdMovementAddress> getList(Long number){
+        return repository.findByPk_householdSerialNumber(number)
+                .orElseThrow(NotFoundResidentException::new);
     }
 }
