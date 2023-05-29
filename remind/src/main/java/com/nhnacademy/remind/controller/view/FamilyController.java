@@ -82,6 +82,16 @@ public class FamilyController {
         return "birth";
     }
 
+    @GetMapping("/death/{serialNumber}")
+    public String death(@PathVariable(name = "serialNumber") Long serialNumber,
+                        Model model){
+        BirthDeathReportResident report = birthDeathReportResidentService.findDeath(serialNumber);
+        Resident resident = residentService.findBySerialId(serialNumber);
+        model.addAttribute("report",report);
+        model.addAttribute("date",resident.getDeathDate().format(DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 HH시 mm분")));
+        model.addAttribute("resident",resident);
+        return "death";
+    }
 
 
 
