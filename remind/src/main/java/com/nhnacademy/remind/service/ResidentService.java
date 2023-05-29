@@ -48,4 +48,8 @@ public class ResidentService {
         return residentRepository.findByResidentId(id).orElseThrow(NotFoundResidentException::new);
     }
 
+    public Resident findBySerialId(Long serialNumber) {
+        return residentRepository.findById(serialNumber).orElseThrow(NotFoundResidentException::new);
+    }
+
 }

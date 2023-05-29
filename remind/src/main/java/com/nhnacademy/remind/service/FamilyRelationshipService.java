@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 import com.nhnacademy.remind.exception.NotFoundResidentException;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -48,6 +50,9 @@ public class FamilyRelationshipService {
                 targetNumber,baseNumber).orElseThrow(NotFoundResidentException::new);
 
         familyRelationshipRepository.delete(familyRelationship);
+    }
+    public List<FamilyRelationship> getFamilyRelationship(Long number){
+        return familyRelationshipRepository.findByPk_BaseResidentSerialNumber(number).orElseThrow(NotFoundResidentException::new);
     }
 
 
