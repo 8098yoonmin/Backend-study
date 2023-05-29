@@ -44,6 +44,8 @@ public class ResidentService {
         return residentModifyDTO;
     }
 
-
+    public Resident findByResidentId(String id){
+        return residentRepository.findByResidentId(id).orElseThrow(NotFoundResidentException::new);
+    }
 
 }

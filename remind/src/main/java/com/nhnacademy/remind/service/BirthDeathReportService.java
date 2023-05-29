@@ -84,4 +84,12 @@ public class BirthDeathReportService {
         BirthDeathReportResident deathReport = birthDeathReportRepository.getBirthDeathReportResident(number,targetNumber).orElseThrow(NotFoundResidentException::new);
         birthDeathReportRepository.delete(deathReport);
     }
+
+    public BirthDeathReportResident findBirth(Long id){
+        return birthDeathReportRepository.findByResident_ResidentSerialNumberAndPk_BirthDeathTypeCode(id,"출생");
+    }
+    public BirthDeathReportResident findDeath(Long id){
+        return birthDeathReportRepository.findByResident_ResidentSerialNumberAndPk_BirthDeathTypeCode(id,"사망");
+    }
+
 }
