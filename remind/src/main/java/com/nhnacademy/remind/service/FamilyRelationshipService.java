@@ -1,6 +1,7 @@
 package com.nhnacademy.remind.service;
 
 import com.nhnacademy.remind.domain.FamilyRelationshipDTO;
+import com.nhnacademy.remind.domain.FamilyRelationshipModifyDTO;
 import com.nhnacademy.remind.entity.FamilyRelationship;
 import com.nhnacademy.remind.entity.Resident;
 import com.nhnacademy.remind.repository.FamilyRelationshipRepository;
@@ -29,6 +30,15 @@ public class FamilyRelationshipService {
                 .familyResident(familyResident)
                 .familyRelationshipCode(familyRelationshipDTO.getFamilyRelationshipCode())
                 .build();
+        familyRelationshipRepository.saveAndFlush(familyRelationship);
+        return familyRelationshipDTO;
+    }
+
+    public FamilyRelationshipModifyDTO updateFamilyRelationship(FamilyRelationshipModifyDTO familyRelationshipDTO, Long baseNumber, Long targetNumber) {
+        FamilyRelationship familyRelationship = familyRelationshipRepository.findByPk_FamilyResidentSerialNumberAndPk_BaseResidentSerialNumber(
+                targetNumber,baseNumber).orElseThrow(NotFoundResidentException::new);
+
+        familyRelationship.setFamilyRelationshipCode(familyRelationshipDTO.getFamilyRelationshipCode());
         familyRelationshipRepository.saveAndFlush(familyRelationship);
         return familyRelationshipDTO;
     }

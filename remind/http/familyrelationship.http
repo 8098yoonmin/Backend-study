@@ -20,4 +20,4 @@ Content-Type: application/json
 ###
 
 DELETE /residents/7/relationship/4
-Host: localhost:8080
+Host: localhost:8080ㅁ
