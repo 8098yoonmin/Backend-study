@@ -11,6 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -24,9 +26,21 @@ public class FamilyController {
     private final ResidentService residentService;
     private final BirthDeathReportService birthDeathReportResidentService;
     private final HouseholdMovementService householdMovementService;
-
-
     private final CertificateIssueService certificateIssueService;
+
+    @GetMapping("/oauth")
+    public String getOauth(){
+
+        return "oauth";
+    }
+    @PostMapping("/oauth")
+    public String oauth(@RequestParam(name="id")Long id, Model model){
+
+        model.addAttribute("resident",id);
+        model.addAttribute("birth",birthDeathReportResidentService.findBirth(id));
+        model.addAttribute("death",birthDeathReportResidentService.findDeath(id));
+        return "index";
+    }
 
     @GetMapping("/index")
     public String index(Model model) {

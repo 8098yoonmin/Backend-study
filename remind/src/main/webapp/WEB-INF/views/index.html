@@ -10,7 +10,7 @@
 <h1>Main</h1>
 <th:block th:include="fragments/heading" />
 
-<ul  sec:authorize="hasAuthority('Resident')">
+<ul  sec:authorize="isAuthenticated()">
     <li>
         <a th:href="@{/family/}+${resident}">가족관계증명서</a></br>
     </li>
