@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+</head>
+<body>
+<h1>Main</h1>
+<th:block th:include="fragments/heading" />
+
+<ul  sec:authorize="hasAuthority('Resident')">
+    <li>
+        <a th:href="@{/family/}+${resident}">가족관계증명서</a></br>
+    </li>
+    <li>
+        <a th:href="@{/household/}+${resident}">주민등록등본</a></br>
+    </li>
+    <li>
+        <a th:if="${birth} != null"
+           th:href="@{/birth/}+${resident}">출생신고서</a></br>
+    </li>
+    <li>
+        <a th:if="${death} != null"
+           th:href="@{/death/}+${resident}">사망신고서</a>
+    </li>
+</ul>
+
+<br />
+
+</body>
+</html>
