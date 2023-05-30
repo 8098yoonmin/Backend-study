@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,10 +14,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class DefaultAccountServiceTest {
 
     @Autowired
-    AccountService accountService;
+    AccountRepository accountRepository;
     @Test
     void getAccounts() {
-        List<Account> actual = accountService.getAccounts();
-        assertThat(actual.size()).isEqualTo(2);
+        Account kym = new Account( 1L , "김윤민", 1000);
+        accountRepository.save(kym);
+        Optional<Account> actual = accountRepository.findById(1L);
+        assertThat(actual).isPresent();
+        assertThat(actual.get()).isEqualTo(kym);
     }
 }
