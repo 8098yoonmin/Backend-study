@@ -4,12 +4,14 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Setter
 @Getter
 @EqualsAndHashCode
 @ToString
 @Entity
+@Table(name="student")
 public class Student {
 
     public Student(){}
