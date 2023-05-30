@@ -7,11 +7,13 @@ import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Getter
 @EqualsAndHashCode
 @ToString
 @Entity
+@Table(name="account")
 public class Account {
 
 
