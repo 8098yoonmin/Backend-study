@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="260b11e6-99ca-4ee3-9812-552ebda90cec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/actuator/ExInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/2/0/2017fa3eaee5bcdbc3dfd3f11d398352f6b03f7b" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/2/0/2017fa3eaee5bcdbc3dfd3f11d398352f6b03f7b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/3/8/38ddc693c3ddca58318c107773eb9d58c945998b" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/3/8/38ddc693c3ddca58318c107773eb9d58c945998b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/7/1/7114e5ecd5c5a07c681983c7b128f8904765b93f" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/7/1/7114e5ecd5c5a07c681983c7b128f8904765b93f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/c/c/cc69b8d7d8bde75136d386b3b8d651d060dcc95c" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/c/c/cc69b8d7d8bde75136d386b3b8d651d060dcc95c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/config/RootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/config/RootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/controller/admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/controller/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/controller/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/mapper/maps/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/mapper/maps/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/service/DbServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/board/src/main/java/com/nhnacademy/board/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/spring-mvc/springmvc" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.4_/board_task/spring-mvc/springmvc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/.idea/sonarlint/issuestore/5/a/5a5083552b7f4f36240f091437a41b226c7c4670" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/.idea/sonarlint/issuestore/5/a/5a5083552b7f4f36240f091437a41b226c7c4670" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/.idea/sonarlint/issuestore/b/3/b3ff5d2f92735d6bdf467bb1b0385fba88515a62" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/.idea/sonarlint/issuestore/b/3/b3ff5d2f92735d6bdf467bb1b0385fba88515a62" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/domain/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/repository/IPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/repository/IPostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JPA/5.9/5.9과제/board_jpa_김윤민/src/main/java/com/nhnacademy/board/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/1/d/1d65978f36dc1db1fdcb53724da4c1ea93696fb4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/1/f/1f1763f358c257ea3515417352b82b0165647ad1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/2/5/2508e1afaa4462d21ef23c82301f37d5bdd2d2f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/4/b/4b109445706bc7136ac3386296884fc142dc9e28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/4/b/4b19d0059a825e09d8e6f86e81be6a01a73827df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/5/1/51590d0ce1174587a5d1b382e3b4906ae38e71bd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/8/a/8a0d4a519238e62dcce2fd655cd43b7d8098a7ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/a/7/a74a3e13a2c6504435d49d6d200ca078b8af7f73" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/b/6/b6a30deea2c6180b941bdb347c5bf06208b0e850" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/e/b/ebc615df2618b42d7309adfa15f6ef1e9a6a7f81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/f/0/f0d478e7ad4661503739f7012c8cd8d66eab045e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/f/4/f42863bff51b6544058b7aa5a7e24b15f40de56c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/advice/CommonAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/config/JpaConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/config/PropertiesConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/controller/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/controller/ControllerBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/controller/admin/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/controller/admin/ProfileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/controller/login/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/controller/user/PostController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/domain/IPost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/domain/IUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/domain/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/domain/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/exception/DuplicateStudentIdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/exception/NotWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/exception/StudentNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/exception/ValidationFailedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/filter/CountFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/filter/LoginCheckFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/filter/VisitorFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/init/WebAppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/interceptor/TimeCheckInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/repository/IPostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/repository/IUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/repository/RepositoryBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/request/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/request/PostRegisterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/request/UserRegisterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/service/PostService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/servlet/FrontServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/java/com/nhnacademy/board/util/CookieUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/common.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/message.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/message_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/message_ko.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/script/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/resources/users.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/upload/dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/upload/hello.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/upload/no-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/upload/이순신.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/error/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/error/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/error/duplicateStudentId.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/error/notWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/error/studentNotFound.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/error/valid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/login/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/login/loginInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/login/loginUserInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/post/postList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/post/postRegister.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/post/postView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/user/userList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/user/userRegister.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/WEB-INF/views/user/userView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/static/hello.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/static/no-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/static/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/static/스크린샷 2023-04-16 오후 4.13.31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/static/스크린샷 2023-05-03 오전 9.40.42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/main/webapp/resources/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/test/java/com/nhnacademy/board/controller/admin/AdminControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/test/java/com/nhnacademy/board/controller/login/LoginControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/test/java/com/nhnacademy/board/controller/user/PostControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/test/java/com/nhnacademy/board/service/LoginServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/test/java/com/nhnacademy/board/service/PostServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JPA/과제/board_repository/src/test/java/com/nhnacademy/board/service/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.17/과제/답안/student-step" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring MVC/4.17/과제/답안/student-step" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/0/3/034c2ef3600e194100fb1b4d533b04d828b5d54e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/0/3/03e210c49318df6548fb249b14a3d16f23f9f211" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/0/e/0e3b459847c68958dc6f02599fc1b93f06838106" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/0/e/0ebd0aa09cf4325dcf0002b8185eb70db01fe903" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/1/0/10f6b12d6fd12f9f75ca38d763eb08ab4e404402" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/1/a/1adf8eea87e404e74799e39586bb7293917b044d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/1/b/1b4c1dfffd25d7530745d49a9351c44b7490ab6d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/1/d/1d65978f36dc1db1fdcb53724da4c1ea93696fb4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/2/5/2508e1afaa4462d21ef23c82301f37d5bdd2d2f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/2/7/27bcdd893a6d82a9765262ad9b08ce945259693f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/4/9/4903e4153de973a1d5447c41af5db91fd00e26c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/4/b/4b19d0059a825e09d8e6f86e81be6a01a73827df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/5/0/505214a0bbb6dad6ee51eb108cbf37e015884442" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/5/2/5204a658a81aca85ed59d9bd6c68d7322eee9fb0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/5/a/5a2abd4ea67ec4adc2c7d4943568647153313354" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/6/8/683d218651acc44415dbd535bfd989df88259a76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/6/b/6bd6fe3cc90e6e07806ecdf40f43dacfd3c1cdf3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/7/0/702f679b19cbaa6650998ae8694fb0bef714983f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/7/e/7e8fd92c9c6534a1d846076d3fee911c39c472c6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/8/5/85244c4a291c2013e06c34d22d71cf8bffb35751" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/8/5/85b47c574f809fc653055fec0e0ee96cd5838d8e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/8/a/8a0d4a519238e62dcce2fd655cd43b7d8098a7ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/9/0/90adb8d7569bbb489ee46b68d7abc716ed101159" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/9/9/99e56de88fa69ae3166d374e5fb969f18869973b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/9/b/9bbc72da7c0e508c43ed6bac765a3e285e624669" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/a/5/a5b9d7c4a525fbd4cefc03df3aaa7a47a5572984" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/a/e/ae1c34ae1e61b6f1a0b7c2c645b9773b108f101f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/b/2/b256ca465db998bed427cbf179e92370345e3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/c/0/c0f9163b2d8af4cd72c27b4094dd9e888d72bc88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/c/a/ca691a717ca26cf1b66e6c7e7af5e7e1bc322955" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/d/3/d36316514a0e342876df8912a330ead5a366949f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/d/6/d67b18743cb5d4f6efee677bdf11bd51cffeffa1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/d/9/d9e4e79eca0e7e0530a7d65153656354c186f854" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/d/c/dc32a96e3f084d619cc8ced06479e918218a3ad3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/d/f/df3f685e008898f1f2f19285db48a02c6cf7ea5a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/f/9/f9fde83527541c53989bf33755afbc3c60ddb6ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/f/d/fdf77ac617a8bd2ebcd2eabfa8926ae2df84ece0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/f/f/ff915b9cbda062c71014540dfd5b8b58ee6cb08c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/WebAppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/common/CommonPropertiesConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/config/RootConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/BaseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/admin/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/admin/UserDeleteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/admin/UserListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/admin/UserRegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/admin/UserUpdateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/admin/UserViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/controller/board/PostListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/domain/ConcretePost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/domain/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/filter/LoginCheckFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/json/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/repository/JsonUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/repository/MapUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/repository/MemoryPostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/repository/PostRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/request/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/request/PostRegisterRequset.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/request/UserRegisterRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/service/PostService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/java/com/nhnacademy/board/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/resources/common.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/board/boardList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/board/postView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/board/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/login/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/login/loginInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/user/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/user/userList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/WEB-INF/views/user/view.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/resources/dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/resources/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/resources/no-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/resources/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/4.20/board/src/main/webapp/resources/프로필.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/board/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring MVC/board/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/답안지?/spring-mvc/springmvc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring MVC/답안지?/spring-mvc/springmvc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring MVC/최종과제/board-spring-mvc최종.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../edu-springboot-conditional-workshop" beforeDir="false" afterPath="$PROJECT_DIR$/../edu-springboot-conditional-workshop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountWebController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/DefaultAccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/DummyAccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/SpringBootStudentApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/VersionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/configuration/AccountAutoConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/configuration/AccountProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springbootstudent/DefaultAccountServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springbootstudent/SpringBootStudentApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/actuator/ExampleInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/actuator/ExampleInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../remind/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../remind/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/demo515/src/main/java/com/nhnacademy/demo515/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/로그인 과제/day1-oauth/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/로그인 과제/day1-training/src/main/java/com/nhnacademy/security/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/로그인 과제/day1-training/src/main/java/com/nhnacademy/security/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification-server/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification-server/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/3/1/31665cea605ea46e74fe2373968c9102cc7c0270" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/3/1/31665cea605ea46e74fe2373968c9102cc7c0270" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/3/d/3d0364df7a3bd3e63c765e68e2a30f8ae7a7a306" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/3/d/3d0364df7a3bd3e63c765e68e2a30f8ae7a7a306" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/d/2/d29658c73d2cdc4d139a41734dc38ba65272ccf4" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/d/2/d29658c73d2cdc4d139a41734dc38ba65272ccf4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/주민등본/family-certification_도언이/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../인증개발/주민등본/서류데이터베이스.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../인증개발/주민등본/서류데이터베이스.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QUb5fvPV5EhL4ArTVwaU9kJfPJ" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/yoonmin/Desktop/java_backend/backend-study/Spring boot/spring-boot-student11",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "2eaa7a4aa9bcb93c4cef6be873f4a35b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nhnacademy.springbootstudent" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nhnacademy.springbootstudent" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nhnacademy.springbootstudent" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootStudentApplication">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="c5bba90a-f9e9-4906-9d48-e8d69353a309" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" requestIdentifier="#10" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="8" requestIdentifier="#8" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="DefaultAccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-student" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.springbootstudent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.springbootstudent" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springbootstudent.DefaultAccountServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootStudentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-boot-student" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nhnacademy.springbootstudent.SpringBootStudentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #8" />
+        <item itemvalue="HTTP Request.generated-requests | #10" />
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #9" />
+        <item itemvalue="JUnit.DefaultAccountServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="260b11e6-99ca-4ee3-9812-552ebda90cec" name="Changes" comment="" />
+      <created>1685410926326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685410926326</updated>
+      <workItem from="1685410927736" duration="10581000" />
+      <workItem from="1685495711101" duration="9393000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/configuration/AccountAutoConfiguration.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/configuration/AccountProperties.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

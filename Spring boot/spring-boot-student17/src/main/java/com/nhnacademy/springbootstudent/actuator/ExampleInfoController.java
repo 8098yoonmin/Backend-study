@@ -12,4 +12,5 @@ public class ExampleInfoController implements InfoContributor {
     public void contribute(Info.Builder builder) {
         builder.withDetail("example", Map.of("key", "value"));
     }
+
 }
