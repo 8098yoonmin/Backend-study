@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentNameController {
 
-    @Value("${nhn.student.name}")
-    private String studentName;
+//    @Value("${nhn.student.name}")
+//    private String studentName;
 
     @Autowired
     private StudentProperties studentProperties;
 
-    @GetMapping("/student-name")
-    public String getStudentName() {
-        return studentName;
-    }
+//    @GetMapping("/student-name")
+//    public String getStudentName() {
+//        return studentName;
+//    }
     @GetMapping("/student-name2")
     public String getStudentName2() {
         return studentProperties.getName();
