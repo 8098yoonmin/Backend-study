@@ -50,7 +50,7 @@ class AccountControllerRandomPortTest {
     @Test
     @Order(3)
     void testCreateAccount() {
-        Account zbum = new Account(3L, "zbum1", 100);
+        Account zbum = new Account(4L, "zbum2", 1000);
         ResponseEntity<Account> result = testRestTemplate.postForEntity(
                 "/accounts",
                 zbum,
@@ -61,6 +61,9 @@ class AccountControllerRandomPortTest {
     }
 
     @Test
-    void deleteAccount() {
+    void testDeleteAccount() {
+        testRestTemplate.delete(
+                "/accounts/{id}",
+                3L);
     }
 }
