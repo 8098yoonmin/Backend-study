@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="260b11e6-99ca-4ee3-9812-552ebda90cec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/actuator/ExInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/2/0/2017fa3eaee5bcdbc3dfd3f11d398352f6b03f7b" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/2/0/2017fa3eaee5bcdbc3dfd3f11d398352f6b03f7b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/3/8/38ddc693c3ddca58318c107773eb9d58c945998b" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/3/8/38ddc693c3ddca58318c107773eb9d58c945998b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/7/1/7114e5ecd5c5a07c681983c7b128f8904765b93f" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/5.3/과제/항공편과제_김윤민/.idea/sonarlint/issuestore/7/1/7114e5ecd5c5a07c681983c7b128f8904765b93f" afterDir="false" />
@@ -233,30 +232,8 @@
       <change beforePath="$PROJECT_DIR$/../../Spring MVC/답안지?/spring-mvc/springmvc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring MVC/답안지?/spring-mvc/springmvc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Spring MVC/최종과제/board-spring-mvc최종.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../edu-springboot-conditional-workshop" beforeDir="false" afterPath="$PROJECT_DIR$/../edu-springboot-conditional-workshop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/AccountWebController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/DefaultAccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/DummyAccountRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/SpringBootStudentApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/VersionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/configuration/AccountAutoConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springbootstudent/configuration/AccountProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/account.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springbootstudent/DefaultAccountServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springbootstudent/SpringBootStudentApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/actuator/ExampleInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/actuator/ExampleInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-student17/src/main/java/com/nhnacademy/springbootstudent/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../remind/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../remind/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../인증개발/demo515/src/main/java/com/nhnacademy/demo515/SecurityConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../인증개발/로그인 과제/day1-oauth/.idea/workspace.xml" beforeDir="false" />
@@ -305,27 +282,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/yoonmin/Desktop/java_backend/backend-study/Spring boot/spring-boot-student11",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "2eaa7a4aa9bcb93c4cef6be873f4a35b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yoonmin/Desktop/java_backend/backend-study/Spring boot/spring-boot-student11&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2eaa7a4aa9bcb93c4cef6be873f4a35b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nhnacademy.springbootstudent" />
@@ -431,6 +408,7 @@
       <updated>1685410926326</updated>
       <workItem from="1685410927736" duration="10581000" />
       <workItem from="1685495711101" duration="9393000" />
+      <workItem from="1685583724271" duration="13000" />
     </task>
     <servers />
   </component>

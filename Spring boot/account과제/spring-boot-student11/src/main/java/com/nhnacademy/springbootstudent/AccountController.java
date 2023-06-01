@@ -3,6 +3,7 @@ package com.nhnacademy.springbootstudent;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,7 +29,7 @@ public class AccountController {
         return accountService.createAccount(account);
     }
 
-    @DeleteMapping("/accounts/{id}")
+    @DeleteMapping(value="/accounts/{id}",produces = MediaType.APPLICATION_JSON_VALUE)
     public String deleteAccount(@PathVariable Long id) {
         accountService.deleteAccount(id);
         return "{\"result\":\"OK\"}";
