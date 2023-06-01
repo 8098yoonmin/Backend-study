@@ -19,7 +19,7 @@ public class AccountController {
     }
 
     @GetMapping("/accounts/{id}")
-    public Account getStudent(@PathVariable Long id){
+    public Account getAccount(@PathVariable Long id){
         return accountService.getAccount(id);
     }
 
