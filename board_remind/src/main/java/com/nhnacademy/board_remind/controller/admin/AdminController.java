@@ -44,5 +44,12 @@ public class AdminController {
         return "user/userList";
     }
 
+    @GetMapping("/register")
+    public String register(Model model){
+        Users user = new Users();
+        model.addAttribute("user",user);
+        return "user/userRegister";
+    }
+
 
 }
