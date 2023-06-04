@@ -2,6 +2,7 @@ package com.nhnacademy.board_remind.init;
 
 import com.nhnacademy.board_remind.config.RootConfig;
 import com.nhnacademy.board_remind.config.WebConfig;
+import com.nhnacademy.board_remind.filter.LoginCheckFilter;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
@@ -32,8 +33,9 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceEncoding(true);
+        LoginCheckFilter loginCheckFilter = new LoginCheckFilter();
         HiddenHttpMethodFilter hiddenHttpMethodFilter = new HiddenHttpMethodFilter();
-        return new Filter[]{characterEncodingFilter, hiddenHttpMethodFilter};
+        return new Filter[]{characterEncodingFilter, loginCheckFilter, hiddenHttpMethodFilter};
     }
 
     @Override

@@ -39,6 +39,7 @@ public class LoginCheckFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
@@ -47,7 +48,7 @@ public class LoginCheckFilter implements Filter {
 
         if(urlCheck(path)){
             HttpSession session = request.getSession(false);
-            if(Objects.isNull(session) || Objects.isNull(session.getAttribute("user"))){
+            if(Objects.isNull(session) || Objects.isNull(session.getAttribute("user")) ){
                 response.sendRedirect("/login");
                 return;
             }
