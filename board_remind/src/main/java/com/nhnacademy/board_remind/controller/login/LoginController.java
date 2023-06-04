@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -58,6 +59,18 @@ public class LoginController implements BaseController {
             HttpSession session = req.getSession(true);
             session.setAttribute("user", user);
             return "redirect:/post?page=1";
+        }
+        return "redirect:/login";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest req, HttpServletResponse rep){
+        HttpSession session = req.getSession(false);
+        if(Objects.nonNull(session)){
+            session.invalidate();
+            Cookie cookie = new Cookie("JSESSIONID", "");
+            cookie.setMaxAge(0);
+            rep.addCookie(cookie);
         }
         return "redirect:/login";
     }
