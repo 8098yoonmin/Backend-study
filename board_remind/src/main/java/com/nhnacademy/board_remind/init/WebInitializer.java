@@ -1,4 +1,4 @@
-package com.nhnacademy.board_remind.filter;
+package com.nhnacademy.board_remind.init;
 
 import com.nhnacademy.board_remind.config.RootConfig;
 import com.nhnacademy.board_remind.config.WebConfig;
