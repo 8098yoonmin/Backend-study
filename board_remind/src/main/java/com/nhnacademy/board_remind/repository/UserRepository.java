@@ -11,6 +11,9 @@ import java.util.stream.Collectors;
 @Repository
 public class UserRepository {
     Map<String, Users> userMap = new HashMap<>();
+    public void add(Users user) {
+        userMap.put(user.getId(),user);
+    }
 
     public void register(Users user){ userMap.put(user.getId(),user);}
     public void modify(Users user){userMap.put(user.getId(),user);}

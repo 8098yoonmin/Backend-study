@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.nhnacademy.board_remind.Base;
+import com.nhnacademy.board_remind.domain.Users;
+import com.nhnacademy.board_remind.repository.UserRepository;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -17,6 +19,19 @@ import org.springframework.stereotype.Controller;
         excludeFilters = {@ComponentScan.Filter(Controller.class)}
 )
 public class RootConfig {
+
+    @Bean
+    public UserRepository userRepository() {
+        UserRepository userRepository = new UserRepository();
+        userRepository.add(new Users("admin","1234","관리자"));
+        for (int i = 1; i < 100; i++) {
+            String id = "student" + i;
+            String password = i+"q";
+            String name = "아카데미" + i;
+            userRepository.add(new Users(id,password,name,"no-image.png"));
+        }
+        return userRepository;
+    }
 
     @Bean
     public MessageSource messageSource(){
