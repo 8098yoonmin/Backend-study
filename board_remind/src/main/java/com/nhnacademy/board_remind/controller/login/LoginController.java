@@ -23,7 +23,7 @@ public class LoginController implements BaseController {
 
     @GetMapping("/login")
     public String getLogin(Model model, Users user){
-        if(Objects.nonNull(user)){
+        if(user.getId() != null){
             return "redirect:/user";
         }
         log.info("message:{}", model.getAttribute("message"));
