@@ -1,14 +1,19 @@
 package com.nhnacademy.board_remind.controller.user;
 
 import com.nhnacademy.board_remind.domain.Posts;
+import com.nhnacademy.board_remind.domain.Users;
+import com.nhnacademy.board_remind.request.PostRegisterRequest;
 import com.nhnacademy.board_remind.service.PostService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -39,6 +44,23 @@ public class PostController {
         }
         return "post/postList";
     }
+
+    @PostMapping("/register")
+    public String addRegister(PostRegisterRequest postRegisterRequest, HttpServletRequest req){
+        Long id = postService.getId();
+        HttpSession session = req.getSession();
+        Users user = (Users) session.getAttribute("user");
+        postService.register(new Posts(id, postRegisterRequest.getTitle(), postRegisterRequest.getContent(), user.getId()));
+        return "redirect:/post?page=1";
+
+    }
+
+    @GetMapping("/register")
+    public String register(Model model){
+        model.addAttribute("post", new Posts());
+        return "post/postRegister";
+    }
+
 
 
 

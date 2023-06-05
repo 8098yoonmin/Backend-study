@@ -32,5 +32,15 @@ public class PostService {
         return postList;
     }
 
+    public Long getId(){
+        List<Posts> postList = postRepository.getPosts();
+        int size = postList.size()-1;
+        Long id = Long.valueOf(postList.get(size).getId());
+        return id+1;
+    }
+    public void register(Posts post){
+        postRepository.register(post);
+    }
+
 
 }
