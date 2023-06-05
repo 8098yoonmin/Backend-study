@@ -8,11 +8,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartRequest;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -58,7 +56,7 @@ public class AdminController {
     }
 
     @PostMapping("/register")
-    public String addRegister(UserRegisterRequest userRegisterRequest) throws IOException {
+    public String addRegister( UserRegisterRequest userRegisterRequest) throws IOException {
         MultipartFile file = userRegisterRequest.getProfileFileName();
         String id = userRegisterRequest.getId();
         String password = userRegisterRequest.getPassword();
@@ -74,7 +72,25 @@ public class AdminController {
         return "redirect:/user?page=1";
     }
 
-    
+    @GetMapping("/view")
+    public String views(@RequestParam(name = "id") String id, Model model){
+        Users user = userService.getUser(id);
+
+        model.addAttribute("user",user);
+        return "user/userView";
+    }
+    @PostMapping("/delete")
+    public String delete(@RequestParam(name = "id") String id){
+        userService.delete(id);
+        return "redirect:/user?page=1";
+    }
+    @GetMapping("/update")
+    public String getUpdate(@RequestParam(name = "id")String id,Model model){
+        Users user = userService.getUser(id);
+        model.addAttribute("user",user);
+        return "user/userRegister";
+    }
+
 
 
 

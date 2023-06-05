@@ -5,7 +5,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.nhnacademy.board_remind.Base;
+import com.nhnacademy.board_remind.domain.Posts;
 import com.nhnacademy.board_remind.domain.Users;
+import com.nhnacademy.board_remind.repository.PostRepository;
 import com.nhnacademy.board_remind.repository.UserRepository;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +21,13 @@ import org.springframework.stereotype.Controller;
         excludeFilters = {@ComponentScan.Filter(Controller.class)}
 )
 public class RootConfig {
+    @Bean
+    public PostRepository postRepository(){
+        PostRepository postRepository = new PostRepository();
+        postRepository.register(new Posts(Long.valueOf(1),"가입인사","반가워요","marco"));
 
+        return postRepository;
+    }
     @Bean
     public UserRepository userRepository() {
         UserRepository userRepository = new UserRepository();
