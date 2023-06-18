@@ -1,0 +1,10 @@
+
+`	java:S112C"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ
+`	java:S112p"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(υ£Φ 
+f
+java:S2147+"DCombine this catch with the one at line 41, which has the same body.(ι–³φϋÿÿÿÿ8Ρ‡’μ0
+O
+java:S2130%"9Use "Integer.parseInt" for this string-to-int conversion.(°Ψρώ
+J	java:S108)")Either remove or fill this block of code.(βΓƒύÿÿÿÿ8ΐ”‡’μ0
+J	java:S108+")Either remove or fill this block of code.(ι–³φϋÿÿÿÿ8’Ρ‡’μ0
