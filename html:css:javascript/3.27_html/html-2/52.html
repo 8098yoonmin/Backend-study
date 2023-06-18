@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                width: 400px;
+                height: 100px;
+                border: 5px solid red;
+                padding: 20px;
+            }
+            .child{
+                width: 100px;
+                height: 50px;
+                font-size:20pt;
+                text-align: center;
+                line-height: 50px;
+                border:1px solid black;
+                box-sizing: border-box;
+            }
+            .child:nth-child(2){
+                height: 70px;
+            }
+
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+        <h1>Flex: 정렬(수직 방향)</h1>
+        <h2>흐름 수직 방향의 시작에서 수직 정렬</h2>
+        <h3 style="color:blue;">align-items: flex-start; default</h3>
+        <h3>자료[52,53]</h3>
+
+        <div class="container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+        
+        <xmp>
+            <style>
+                .container{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    width: 400px;
+                    height: 100px;
+                    border: 5px solid red;
+                    padding: 20px;
+                }
+                .child{
+                    width: 100px;
+                    height: 50px;
+                    font-size:20pt;
+                    text-align: center;
+                    line-height: 50px;
+                    border:1px solid black;
+                    box-sizing: border-box;
+                }
+                .child:nth-child(2){
+                    height: 70px;
+                }
+    
+            </style>
+
+            <div class="container">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+            </div>
+        </xmp>
+    </body>
+</html>

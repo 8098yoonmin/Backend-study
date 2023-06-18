@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+            }
+            .child{
+                width: 100px;
+                height: 100px;
+                font-size:20pt;
+                text-align: center;
+                line-height: 100px;
+            }
+            .child:nth-child(1){
+                background-color: skyblue;
+                flex:2;
+                
+            }
+            .child:nth-child(2){
+                background-color: wheat;
+                flex:1;
+            }
+            .child:nth-child(3){
+                background-color: greenyellow;
+                flex:none;
+                width: 100px;
+                height: 200px;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+        <h1>Display:Flexible 박스</h1>
+        <h2>flex:none 의미?</h2>
+        <h3> - 원래 지정된 공간을 차지 즉 flex item 크기가 커지거나 작어지지 않습니다.</h3>
+        <h3> - 또한 flex container의 크기에 영향을 받지 않습니다.</h3>
+        <h3> - flex item의 원래 크기를 유지합니다.</h3>
+        <h3> - flex item3을 제외한 item1,item2을 기준으로 2:1 비율을 나눠서 차지 합니다.</h3>
+
+        <h1>
+            <a href="https://developer.mozilla.org/ko/docs/Web/CSS/:nth-child" target="_blank" >
+                <cite>:nth-child란?(mdn)</cite>
+            </a>
+            <q>형제 사이에서의 순서에 따라 요소를 선택합니다.</q>
+        </h1>
+        <div class="container">
+            <div class="child">flex:2</div>
+            <div class="child">flex:1</div>
+            <div class="child">flex:1</div>
+        </div>
+
+        <xmp>
+            
+            <style>
+                .container{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .child{
+                    width: 100px;
+                    height: 100px;
+                    font-size:20pt;
+                    text-align: center;
+                    line-height: 100px;
+                }
+                .child:nth-child(1){
+                    background-color: skyblue;
+                    flex:2;
+                    
+                }
+                .child:nth-child(2){
+                    background-color: wheat;
+                    flex:1;
+                }
+                .child:nth-child(3){
+                    background-color: greenyellow;
+                    flex:none;
+                    width: 100px;
+                    height: 200px;
+                }
+            </style>
+
+            <div class="container">
+                <div class="child">flex:2</div>
+                <div class="child">flex:1</div>
+                <div class="child">flex:1</div>
+            </div>
+
+        </xmp>
+    </body>
+</html>

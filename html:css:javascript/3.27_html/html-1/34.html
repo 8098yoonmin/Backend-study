@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            *{
+                font-size:20pt;
+            }
+            table,th,td {
+                border: 1px double black;
+                width: 800px;
+            }
+
+            .border-red{
+                border: 1px double red;
+                color:red;
+            }
+            .border-blue{
+                border:1px double blue;
+                color:blue;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+
+       <h1>행 합치기 : colspan</h1>
+       <h1>열 합치기 : rowspan</h1>
+       <h2>테이블 속성</h2>
+       <p>
+            <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/table#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80_%ED%98%B8%ED%99%98%EC%84%B1" target="_blank">
+                <cite>테이블 속성(mdn)</cite>바로가기
+            </a>
+        </p>
+       <table>
+        <catpion>전 세계 박스 오피스</catpion>
+        <thead>
+            <tr>
+                <th>제목</th>
+                <th>연도</th>
+                <th>감독</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>아바타</td>
+                <td>2009</td>
+                <td rowspan="2" class="border-blue">제임스 카메론</td>
+            </tr>
+            <tr>
+                <td>타이타닉</td>
+                <td>2002</td>
+            </tr>
+            <tr>
+                <td>어벤저스: 엔드게임</td>
+                <td>2019</td>
+                <td>루소 형제</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="border-red">www.boxoffice.com</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <xmp>
+
+        <style>
+            *{
+                font-size:20pt;
+            }
+            table,th,td {
+                border: 1px double black;
+                width: 800px;
+            }
+
+            .border-red{
+                border: 1px double red;
+                color:red;
+            }
+            .border-blue{
+                border:1px double blue;
+                color:blue;
+            }
+        </style>
+        
+
+        <table>
+            <catpion>전 세계 박스 오피스</catpion>
+            <thead>
+                <tr>
+                    <th>제목</th>
+                    <th>연도</th>
+                    <th>감독</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>아바타</td>
+                    <td>2009</td>
+                    <td rowspan="2" class="border-blue">제임스 카메론</td>
+                </tr>
+                <tr>
+                    <td>타이타닉</td>
+                    <td>2002</td>
+                </tr>
+                <tr>
+                    <td>어벤저스: 엔드게임</td>
+                    <td>2019</td>
+                    <td>루소 형제</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="border-red">www.boxoffice.com</td>
+                </tr>
+            </tfoot>
+        </table>
+    </xmp>    
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            body{
+                background-color: #ccc;
+                min-height: 20000px;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                margin:30px;
+                padding: 10px;
+                background-color: #fff;
+            }
+
+            .item{
+                position: static;
+                top:10px;
+                left:10px;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .item:nth-child(1){
+                background-color: skyblue;
+            }
+
+            .item:nth-child(2){
+                background-color: yellow;
+            }
+
+            .item:nth-child(3){
+                background-color: greenyellow;
+            }
+
+            .target{
+                position:fixed;
+                top:200px;
+                left:500px;
+            }
+
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+        <h1>Position</h1>
+        <h2>position:fixed; </h2>
+        <h2>해당위치에 고정</h2>
+
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item target">2.target</div>
+            <div class="item">3</div>
+        </div>
+
+        <xmp>
+
+            <style>
+                /*
+                    scroll-y 하기위해서 body height 2000으로 설정 
+                */
+                body{
+                    background-color: #ccc;
+                    min-height: 20000px;
+                }
+                .container{
+                    display: flex;
+                    flex-direction: row;
+                    margin:30px;
+                    padding: 10px;
+                    background-color: #fff;
+                }
+    
+                .item{
+                    position: static;
+                    top:10px;
+                    left:10px;
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+    
+                .item:nth-child(1){
+                    background-color: skyblue;
+                }
+    
+                .item:nth-child(2){
+                    background-color: yellow;
+                }
+    
+                .item:nth-child(3){
+                    background-color: greenyellow;
+                }
+                /* 해당위치에 화면고정 */
+                .target{
+                    position:fixed;
+                    top:200px;
+                    left:500px;
+                }
+    
+            </style>
+
+            <div class="container">
+                <div class="item">1</div>
+                <div class="item target">2.target</div>
+                <div class="item">3</div>
+            </div>
+
+        </xmp>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            div::before{
+                content: "마블's";
+                color:red;
+                margin-right:10px;
+            }
+            div::after{
+                content:"시리즈";
+                color:blue;
+                margin-left:10px;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+        <h1>css 유사 Element 셀렉터</h1>
+        
+        <div>캡틴 아메리카</div>
+
+        <xmp>
+            <style>
+                div::before{
+                    content: "마블's";
+                    color:red;
+                    margin-right:10px;
+                }
+                div::after{
+                    content:"시리즈";
+                    color:blue;
+                    margin-left:10px;
+                }
+            </style>
+            
+            <div>캡틴 아메리카</div>
+        </xmp>
+    </body>
+</html>

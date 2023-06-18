@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="./css/basic.css"/>
+    </head>
+    <body>
+        <h1>
+            &lt;code&gt;  : 일반적인 컴퓨터 코드를 나타냄
+        </h1>
+        
+        <pre><code>var para = document.querySelector('p'); para.onclick = function() {
+            alert('Owww, stop poking me!'); }</code></pre>
+
+        <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+        <hr/>
+        
+        <h1>
+            &lt;pre&gt;  : 공백(일반적으로 코드 블록)을 유지하기 위해 사용
+        </h1>
+        <hr/>
+        
+        <h1>
+            &lt;var&gt;  : 변수 이름을 특별하게 표시
+        </h1>
+        <xmp>
+            <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>    
+        </xmp>
+        <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+        <hr/>
+        
+        <h1>
+            &lt;kbd&gt;  : 컴퓨터에 입력된 키보드 입력을 표시
+        </h1>
+        <xmp>
+            <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+            <pre>$ <kbd>ping mozilla.org</kbd></pre>    
+        </xmp>
+        <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+        <pre>$ <kbd>ping mozilla.org</kbd></pre>
+        <hr/>
+
+        <h1>
+            &lt;samp&gt;  : 컴퓨터 프로그램의 출력을 표시
+        </h1>
+        <xmp>
+            <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+                64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>    
+        </xmp>
+        <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+            64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+    </body>
+</html>

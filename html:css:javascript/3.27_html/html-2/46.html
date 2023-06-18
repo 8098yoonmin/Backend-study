@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 400px;
+            }
+            .child{
+                width: 100px;
+                height: 100px;
+                font-size:20pt;
+                text-align: center;
+                line-height: 100px;
+                border:1px solid black;
+            }
+
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+        <h1>Display:Flexible 박스</h1>
+        <h2>flex:nowrap 의미?</h2>
+        <h3> - 한 줄을 넘지 않고 flex-box가 유지될 수 있도록 함</h3>
+        <h3>container width = 400px</h3>
+        <h3 style="color: red;"><b>child width=100px * 5 = 500px</b></h3>
+
+        <div class="container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+        </div>
+
+        <xmp>
+            
+            <style>
+                .container{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    width: 400px;
+                }
+                .child{
+                    width: 100px;
+                    height: 100px;
+                    font-size:20pt;
+                    text-align: center;
+                    line-height: 100px;
+                    border:1px solid black;
+                }
+    
+            </style>
+
+            <div class="container">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child">4</div>
+                <div class="child">5</div>
+            </div>
+
+        </xmp>
+    </body>
+</html>

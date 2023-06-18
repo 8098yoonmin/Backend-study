@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            th,td{
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center" style="color:gold">국내선 항공스케줄 조회</h1>
+        <div style="border:1px solid;color:gray; padding:10px; height:100px; margin:30px;">
+            <form align="center" style="margin:30px;">
+                <select name="departure" style="width:150px; height:30px;">
+                    <option value="none">광주</option>
+                    <option value="seoul">서울</option>
+                </select>
+                <select name="arrival" style="width:150px; height:30px;">
+                    <option value="none">제주</option>
+                    <option value="seoul">무안</option>
+                </select>
+                <select name="date" style="width:150px; height:30px;">
+                    <option value="none">2023.03.23</option>
+                    <option value="seoul">2023.03.24</option>
+                </select>
+                <button class="inquiry" style="width: 50px; height:30px;" >
+                    조회
+                </button>
+            </form>
+        </div>
+        <div style="border:1px solid; padding:10px; height:500px; margin:30px;">
+        </br> 
+            <table border="1" style="margin:auto; border-collapse:collapse;">
+            
+                <tbody>
+                    <tr>
+                        <th>항공편명</th>
+                        <th>항공사명</th>
+                        <th>출발시간</th>
+                        <th>도착시간</th>
+                        <th>일반석운임</th>
+                        <th>비즈니스석운임</th>
+                        <th>출발공항</th>
+                        <th>도착공항</th>
+                    </tr>
+                    <tr>
+                        <td>OZ8141</td>
+                        <td>아시아나항공</td>
+                        <td>2023-03-23 10:30</td>
+                        <td>2023-03-23 11:25</td>
+                        <td>57,900</td>
+                        <td>0</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>OZ8145</td>
+                        <td>아시아나항공</td>
+                        <td>2023-03-23 15:25</td>
+                        <td>2023-03-23 16:20</td>
+                        <td>57,900</td>
+                        <td>0</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>OZ8149</td>
+                        <td>아시아나항공</td>
+                        <td>2023-03-23 18:30</td>
+                        <td>2023-03-23 19:25</td>
+                        <td>57,900</td>
+                        <td>0</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>7C601</td>
+                        <td>제주항공</td>
+                        <td>2023-03-23 10:10</td>
+                        <td>2023-03-23 11:00</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>7C605</td>
+                        <td>제주항공</td>
+                        <td>2023-03-23 18:20</td>
+                        <td>2023-03-23 19:10</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>LJ593</td>
+                        <td>진에어</td>
+                        <td>2023-03-23 10:15</td>
+                        <td>2023-03-23 11:10</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>LJ597</td>
+                        <td>진에어</td>
+                        <td>2023-03-23 14:40</td>
+                        <td>2023-03-23 15:35</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>LJ595</td>
+                        <td>진에어</td>
+                        <td>2023-03-23 19:10</td>
+                        <td>2023-03-23 20:05</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>KE1603</td>
+                        <td>대한항공</td>
+                        <td>2023-03-23 09:40</td>
+                        <td>2023-03-23 19:50</td>
+                        <td>57,900</td>
+                        <td>82,900</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>KE1627</td>
+                        <td>대한항공</td>
+                        <td>2023-03-23 10:35</td>
+                        <td>2023-03-23 20:45</td>
+                        <td>57,900</td>
+                        <td>82,900</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>TW9901</td>
+                        <td>티웨이항공</td>
+                        <td>2023-03-23 08:25</td>
+                        <td>2023-03-23 09:20</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>TW903</td>
+                        <td>티웨이항공</td>
+                        <td>2023-03-23 12:10</td>
+                        <td>2023-03-23 13:00</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                    <tr>
+                        <td>TW9903</td>
+                        <td>티웨이항공</td>
+                        <td>2023-03-23 15:10</td>
+                        <td>2023-03-23 16:05</td>
+                        <td>O</td>
+                        <td>O</td>
+                        <td>광주</td>
+                        <td>제주</td>
+                    </tr>
+                     </tbody>
+        </table>
+        </div>
+    </body>
+</html>

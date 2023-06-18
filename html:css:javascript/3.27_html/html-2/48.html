@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                width: 400px;
+                border: 5px solid red;
+                padding: 20px;
+            }
+            .child{
+                width: 100px;
+                height: 100px;
+                font-size:20pt;
+                text-align: center;
+                line-height: 100px;
+                border:1px solid black;
+                box-sizing: border-box;
+            }
+
+        </style>
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+    <body>
+        <h1>Display:Flexible 박스</h1>
+        <h2>가로방향 정렬 (자료[47, 48] page )</h2>
+        <h3 style="color:blue;">justify-content: flex-start; default</h3>
+
+        <div class="container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+        </div>
+        
+        <xmp>
+            <style>
+                .container{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    width: 400px;
+                    border: 5px solid red;
+                    padding: 20px;
+                }
+                .child{
+                    width: 100px;
+                    height: 100px;
+                    font-size:20pt;
+                    text-align: center;
+                    line-height: 100px;
+                    border:1px solid black;
+                    box-sizing: border-box;
+                }
+    
+            </style>
+
+            <div class="container">
+                <div class="child">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+            </div>
+        </xmp>
+    </body>
+</html>

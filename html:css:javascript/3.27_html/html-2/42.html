@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            p{
+                display: none;
+            }
+        </style>
+
+        <link rel="stylesheet" href="./css/basic.css" />
+    </head>
+
+    <body>
+        <h1>display:none 해당 요소를 화면에서 보이지 않게 합니다.</h1>
+        <div>
+            <a href="https://developer.mozilla.org/ko/docs/Web/CSS/display" target="_blank" >
+                <cite>display - mdn</cite>
+            </a>
+        </div>
+        <hr/>
+        
+        <p>안녕하세요</p>
+        <p>안녕하세요</p>
+        <p>안녕하세요</p>
+        <span>baseball</span>
+        <span>baseball</span>
+
+        <xmp>
+            <style>
+                p{
+                    display: none;
+                }
+            </style>
+
+            <p>안녕하세요</p>
+            <p>안녕하세요</p>
+            <p>안녕하세요</p>
+            <span>baseball</span>
+            <span>baseball</span>            
+        </xmp>
+
+        <hr/>
+        <h1>visibiliy:hidden은 display:none 비슷하지만 공간을 차지하는 특징이 있습니다.</h1>
+        <div>
+            <a href="https://developer.mozilla.org/ko/docs/Web/CSS/visibility" target="_blank">
+                <cite>visibility(mdn)</cite>
+            </a>
+        </div>
+        <hr/>
+        <style>
+            .td_hidden {
+                visibility: hidden;
+            }
+
+            table {
+                border: 1px solid red;
+                width: 500px;
+            }
+
+            td {
+                border: 1px solid gray;
+                height: 100px;
+            }
+        </style>
+        <table>
+            <tr>
+              <td>1.1</td>
+              <td class="td_hidden">1.2</td>
+              <td>1.3</td>
+            </tr>
+            <tr class="td_hidden">
+              <td>2.1</td>
+              <td>2.2</td>
+              <td>2.3</td>
+            </tr>
+            <tr>
+              <td>3.1</td>
+              <td>3.2</td>
+              <td>3.3</td>
+            </tr>
+          </table>
+
+          <xmp>
+            <style>
+                .td_hidden {
+                    visibility: hidden;
+                }
+    
+                table {
+                    border: 1px solid red;
+                    width: 500px;
+                }
+    
+                td {
+                    border: 1px solid gray;
+                    height: 100px;
+                }
+            </style>
+
+            <table>
+                <tr>
+                    <td>1.1</td>
+                    <td class="td_hidden">1.2</td>
+                    <td>1.3</td>
+                </tr>
+                <tr class="td_hidden">
+                    <td>2.1</td>
+                    <td>2.2</td>
+                    <td>2.3</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>3.2</td>
+                    <td>3.3</td>
+                </tr>
+            </table>
+
+          </xmp>
+    </body>
+
+</html>

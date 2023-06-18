@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <style>
+            h1 ~ p{
+                color:red;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/basic.css"/>
+    </head>
+    <body>
+        <h1>css 뒤에 오는 모든 형제 셀렉터 "~"</h1>
+        <h1>h1</h1>
+        <p>첫 번째 자식 p</p>
+        <h2>h2</h2>
+        <p>두 번째 자식 p</p>
+
+        <xmp>
+            <style>
+                h1 ~ p{
+                    color:red;
+                }
+            </style>
+
+            <h1>h1</h1>
+            <p>첫 번째 자식 p</p>
+            <h2>h2</h2>
+            <p>두 번째 자식 p</p>
+        </xmp>
+    </body>
+
+</html>

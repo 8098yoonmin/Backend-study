@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <script>
+        window.addEventListener("DOMContentLoaded", function (){
+
+        const loginForm = document.getElementById("loginForm");
+        const loginSuccessContainer = document.getElementById("loginSuccessContainer");
+        const loginFormContainer = document.getElementById("loginFormContainer");
+        const groceryList= document.getElementById("groceryList");
+
+        const loginFormValidate = function(form){
+                    if(form['userId'].value.trim()==""){
+                        alert("아이디가 비어있습니다.!")
+                        form['userId'].focus();
+                        return false;
+                    }
+                    if(form['userPassword'].value.trim()==""){
+                        alert("비밀번호가 비어있습니다.!");
+                        form['userPassword'].focus();
+                        return false;
+                    }
+                };
+
+        loginForm.addEventListener("submit",function(event){
+            event.preventDefault();
+
+            if(loginFormValidate(event.target) == false){
+                return ;
+            }
+            
+            const userId = event.target['userId'].value;
+            const userPassword = event.target['userPassword'].value;
+           
+            console.log(userId);
+            console.log(userPassword);
+            
+            loginFormContainer.setAttribute("style","display:none")
+            loginSuccessContainer.setAttribute("style", "display:block");
+            groceryList.setAttribute("style","display:block");
+
+            document.getElementsById("loginuserid").innerText = 
+
+        })
+
+        
+        
+    })
+
+
+    </script>
+    <style>
+        #loginSuccessContainer, #loginFormContainer{
+            border:1px solid; 
+            padding:10px; 
+            height:100px; 
+            margin:30px;
+        }
+
+        #loginSuccessContainer{
+            display:none;
+        }
+
+        #groceryList{
+            display:none;
+        }
+    </style>
+    <body>
+        
+        <div id="loginFormContainer" >
+            
+            <form id="loginForm">
+                <input type="text" name="userId" value="nhnacademy" />
+                <input type="password" name="userPassword" value="1234" />
+                <button type="submit">로그인</button>
+            </form>
+            
+            
+        </form>
+        </div>
+
+        
+        <div id="loginSuccessContainer">
+            아이디: <span style="color:aqua" id="loginuserid"></span>
+            이름: <span style="color:aqua" id="loginuserpassword"></span>
+            카트아이디: <span style="color:aqua" id="loginusercart"></span>
+        </div>
+
+
+        <div style="border:1px solid; padding:10px; height:500px; margin:30px;">
+        </br>
+            <span style="font-size: 30px"><strong>장바구니</strong></span>
+    
+             
+            <table border="1" width="800" style="margin:20px;">
+            <thead>
+             <tr>
+                <td>제품(id)</td>
+                <td>제품(명)</td>
+                <td>가격</td>
+                <td>수량</td>
+                <td>합계</td>
+            </tr>
+            </thead>
+            <tbody id="groceryList">
+            <tr>
+                <td>A0007</td>
+                <td>사과</td>
+                <td>1,005</td>
+                <td>5</td>
+                <td>5025</td>
+            </tr>
+            <tr>
+                <td>A0008</td>
+                <td>귤</td>
+                <td>1,006</td>
+                <td>6</td>
+                <td>6,036</td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="./css/basic.css"/>
+    </head>
+    <body>
+
+        <h1>기계가 읽을 수 있는 명확한 시간/날짜 첨부</h1>
+        <h2>문법</h2>
+       
+        <ul>
+            <li>YYYY : 2022 / 년</li>
+            <li>MM : 09 / 월</li>
+            <li>DD : 22 / 일</li>
+            <li>hh : 19 / 시 </li>
+            <li>mm : 06 / 분</li>
+            <li>ss : 15 / 초</li>
+
+        </ul>
+        <xmp>
+            <time datetime="YYYY-MM-DDThh:mm:ssTZD|PTDHMS">
+        </xmp>
+
+        <hr/>
+        <p><time datetime="2016-01-20">20 January 2016</time></p>
+        <!-- Standard simple date -->
+        <p><time datetime="2016-01-20">20 January 2016</time> <!-- Just year and month --></p>
+        <p><time datetime="2016-01">January 2016</time></p>
+        <!-- Just month and day -->
+        <p><time datetime="01-20">20 January</time></p>
+        <!-- Just time, hours and minutes -->
+        <p><time datetime="19:30">19:30</time></p>
+        <!-- You can do seconds and milliseconds too! --> <time datetime="19:30:01.856">19:30:01.856</time> <!-- Date and time -->
+        <p><time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></p>
+        <!-- Date and time with timezone offset-->
+        <p><time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time></p>
+        <!-- Calling out a specific week number-->
+        <p><time datetime="2016-W04">The fourth week of 2016</time></p>
+
+        <xmp>
+            <p><time datetime="2016-01-20">20 January 2016</time></p>
+            <!-- Standard simple date -->
+            <p><time datetime="2016-01-20">20 January 2016</time> <!-- Just year and month --></p>
+            <p><time datetime="2016-01">January 2016</time></p>
+            <!-- Just month and day -->
+            <p><time datetime="01-20">20 January</time></p>
+            <!-- Just time, hours and minutes -->
+            <p><time datetime="19:30">19:30</time></p>
+            <!-- You can do seconds and milliseconds too! --> <time datetime="19:30:01.856">19:30:01.856</time> <!-- Date and time -->
+            <p><time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></p>
+            <!-- Date and time with timezone offset-->
+            <p><time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time></p>
+            <!-- Calling out a specific week number-->
+            <p><time datetime="2016-W04">The fourth week of 2016</time></p>    
+        </xmp>
+
+    </body>
+</html>
