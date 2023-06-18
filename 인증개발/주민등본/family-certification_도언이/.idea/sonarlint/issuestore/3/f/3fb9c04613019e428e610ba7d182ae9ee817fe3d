@@ -1,0 +1,14 @@
+
+r
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "list".(’¼œÃ
+y
+java:S1128"^Remove this unused import 'com.nhnacademy.familycertification.domain.HouseholdCompositionDTO'.(µ¹¤Îûÿÿÿÿ
+k
+java:S1128"PRemove this unused import 'com.nhnacademy.familycertification.entity.Household'.(”•Üÿÿÿÿÿ
+e
+java:S1128"ORemove this unused import 'com.nhnacademy.familycertification.entity.Resident'.(‘ªã 
+y
+java:S1128	"^Remove this unused import 'com.nhnacademy.familycertification.repository.HouseholdRepository'.(ôĞÃøÿÿÿÿ
+s
+java:S1128
+"]Remove this unused import 'com.nhnacademy.familycertification.repository.ResidentRepository'.(‹¬”ø

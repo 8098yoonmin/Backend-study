@@ -69,7 +69,6 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.setTemplateEngineMessageSource(messageSource);
         templateEngine.addDialect(new SpringSecurityDialect());
-
         return templateEngine;
     }
 
