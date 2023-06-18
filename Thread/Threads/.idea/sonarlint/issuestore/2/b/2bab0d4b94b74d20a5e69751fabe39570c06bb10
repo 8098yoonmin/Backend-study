@@ -1,0 +1,15 @@
+
+m
+java:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û
+y
+java:S2142#"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(­¤ß”øÿÿÿÿ
+Y
+java:S2276""CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶
+C	java:S108#")Either remove or fill this block of code.(­¤ß”øÿÿÿÿ
+K
+java:S2446,"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+y
+java:S21425"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(­¤ß”øÿÿÿÿ
+Y
+java:S22764"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(á˜ ¶
+C	java:S1085")Either remove or fill this block of code.(­¤ß”øÿÿÿÿ

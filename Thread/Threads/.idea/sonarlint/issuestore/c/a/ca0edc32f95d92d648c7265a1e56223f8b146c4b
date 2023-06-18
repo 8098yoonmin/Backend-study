@@ -1,0 +1,16 @@
+
+m
+java:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û
+^
+java:S2276"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»ãßºøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(àŒ¼Éúÿÿÿÿ
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+m
+java:S2737#"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û
+Q	java:S125"<This block of commented-out lines of code should be removed.(è†Ïƒ
+^
+java:S2276!"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(»ãßºøÿÿÿÿ
+F
+java:S2446("0"notify" may not wake up the appropriate thread.(…Û¼æ
+V	java:S125)"<This block of commented-out lines of code should be removed.(£àè¼ùÿÿÿÿ
